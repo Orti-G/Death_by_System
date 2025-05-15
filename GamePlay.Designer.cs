@@ -30,31 +30,33 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            button2 = new Button();
-            button1 = new Button();
-            label2 = new Label();
-            label3 = new Label();
-            button3 = new Button();
-            button4 = new Button();
-            label4 = new Label();
-            button5 = new Button();
-            button6 = new Button();
-            label5 = new Label();
-            button7 = new Button();
-            button8 = new Button();
-            label6 = new Label();
-            button9 = new Button();
-            button10 = new Button();
+            lblPoints = new Label();
             label7 = new Label();
-            button11 = new Button();
-            button12 = new Button();
+            txtBoxIntuition = new TextBox();
+            txtBoxEnergy = new TextBox();
+            txtBoxResilience = new TextBox();
+            txtBoxFocus = new TextBox();
+            txtBoxAgility = new TextBox();
+            btnCommit = new Button();
+            txtBoxPower = new TextBox();
+            label6 = new Label();
+            btnMinusIntuition = new Button();
+            btnAddIntuition = new Button();
             label8 = new Label();
-            button13 = new Button();
-            button14 = new Button();
-            label9 = new Label();
-            button15 = new Button();
-            button16 = new Button();
-            textBox1 = new TextBox();
+            btnMinusEnergy = new Button();
+            btnAddEnergy = new Button();
+            label4 = new Label();
+            btnMinusResilience = new Button();
+            btnAddResilience = new Button();
+            label5 = new Label();
+            btnMinusFocus = new Button();
+            btnAddFocus = new Button();
+            label3 = new Label();
+            btnMinusAgility = new Button();
+            btnAddAgility = new Button();
+            label2 = new Label();
+            btnMinusPower = new Button();
+            btnAddPower = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,330 +72,361 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(button9);
-            panel1.Controls.Add(button10);
+            panel1.Controls.Add(lblPoints);
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(button11);
-            panel1.Controls.Add(button12);
+            panel1.Controls.Add(txtBoxIntuition);
+            panel1.Controls.Add(txtBoxEnergy);
+            panel1.Controls.Add(txtBoxResilience);
+            panel1.Controls.Add(txtBoxFocus);
+            panel1.Controls.Add(txtBoxAgility);
+            panel1.Controls.Add(btnCommit);
+            panel1.Controls.Add(txtBoxPower);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(btnMinusIntuition);
+            panel1.Controls.Add(btnAddIntuition);
             panel1.Controls.Add(label8);
-            panel1.Controls.Add(button13);
-            panel1.Controls.Add(button14);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(button15);
-            panel1.Controls.Add(button16);
+            panel1.Controls.Add(btnMinusEnergy);
+            panel1.Controls.Add(btnAddEnergy);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button6);
+            panel1.Controls.Add(btnMinusResilience);
+            panel1.Controls.Add(btnAddResilience);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(button7);
-            panel1.Controls.Add(button8);
+            panel1.Controls.Add(btnMinusFocus);
+            panel1.Controls.Add(btnAddFocus);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button4);
+            panel1.Controls.Add(btnMinusAgility);
+            panel1.Controls.Add(btnAddAgility);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnMinusPower);
+            panel1.Controls.Add(btnAddPower);
             panel1.Location = new Point(136, 260);
             panel1.Name = "panel1";
             panel1.Size = new Size(558, 234);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
-            // button2
+            // lblPoints
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(104, 49);
-            button2.Margin = new Padding(0);
-            button2.Name = "button2";
-            button2.RightToLeft = RightToLeft.No;
-            button2.Size = new Size(23, 22);
-            button2.TabIndex = 2;
-            button2.Text = "-";
-            button2.UseVisualStyleBackColor = true;
+            lblPoints.AutoSize = true;
+            lblPoints.Location = new Point(508, 16);
+            lblPoints.Name = "lblPoints";
+            lblPoints.Size = new Size(25, 15);
+            lblPoints.TabIndex = 33;
+            lblPoints.Text = "100";
+            lblPoints.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // label7
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button1.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(153, 49);
-            button1.Margin = new Padding(0);
-            button1.Name = "button1";
-            button1.RightToLeft = RightToLeft.No;
-            button1.Size = new Size(23, 22);
-            button1.TabIndex = 1;
-            button1.Text = "+";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
+            label7.AutoSize = true;
+            label7.Location = new Point(464, 16);
+            label7.Name = "label7";
+            label7.Size = new Size(43, 15);
+            label7.TabIndex = 32;
+            label7.Text = "Points:";
             // 
-            // label2
+            // txtBoxIntuition
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(52, 53);
-            label2.Name = "label2";
-            label2.Size = new Size(40, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Power";
+            txtBoxIntuition.Location = new Point(389, 137);
+            txtBoxIntuition.MaxLength = 2;
+            txtBoxIntuition.Name = "txtBoxIntuition";
+            txtBoxIntuition.Size = new Size(22, 23);
+            txtBoxIntuition.TabIndex = 31;
+            txtBoxIntuition.Text = "0";
+            txtBoxIntuition.TextAlign = HorizontalAlignment.Center;
+            txtBoxIntuition.Leave += txtBoxIntuition_Leave;
             // 
-            // label3
+            // txtBoxEnergy
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(52, 95);
-            label3.Name = "label3";
-            label3.Size = new Size(41, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Agility";
+            txtBoxEnergy.Location = new Point(388, 97);
+            txtBoxEnergy.MaxLength = 2;
+            txtBoxEnergy.Name = "txtBoxEnergy";
+            txtBoxEnergy.Size = new Size(22, 23);
+            txtBoxEnergy.TabIndex = 30;
+            txtBoxEnergy.Text = "0";
+            txtBoxEnergy.TextAlign = HorizontalAlignment.Center;
+            txtBoxEnergy.Leave += txtBoxEnergy_Leave;
             // 
-            // button3
+            // txtBoxResilience
             // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(104, 91);
-            button3.Margin = new Padding(0);
-            button3.Name = "button3";
-            button3.RightToLeft = RightToLeft.No;
-            button3.Size = new Size(23, 22);
-            button3.TabIndex = 5;
-            button3.Text = "-";
-            button3.UseVisualStyleBackColor = true;
+            txtBoxResilience.Location = new Point(388, 58);
+            txtBoxResilience.MaxLength = 2;
+            txtBoxResilience.Name = "txtBoxResilience";
+            txtBoxResilience.Size = new Size(22, 23);
+            txtBoxResilience.TabIndex = 29;
+            txtBoxResilience.Text = "0";
+            txtBoxResilience.TextAlign = HorizontalAlignment.Center;
+            txtBoxResilience.Leave += txtBoxResilience_Leave;
             // 
-            // button4
+            // txtBoxFocus
             // 
-            button4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(153, 91);
-            button4.Margin = new Padding(0);
-            button4.Name = "button4";
-            button4.RightToLeft = RightToLeft.No;
-            button4.Size = new Size(23, 22);
-            button4.TabIndex = 4;
-            button4.Text = "+";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = true;
+            txtBoxFocus.Location = new Point(129, 93);
+            txtBoxFocus.MaxLength = 2;
+            txtBoxFocus.Name = "txtBoxFocus";
+            txtBoxFocus.Size = new Size(22, 23);
+            txtBoxFocus.TabIndex = 28;
+            txtBoxFocus.Text = "0";
+            txtBoxFocus.TextAlign = HorizontalAlignment.Center;
+            txtBoxFocus.Leave += txtBoxFocus_Leave;
             // 
-            // label4
+            // txtBoxAgility
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(29, 179);
-            label4.Name = "label4";
-            label4.Size = new Size(59, 15);
-            label4.TabIndex = 12;
-            label4.Text = "Resilience";
+            txtBoxAgility.Location = new Point(130, 132);
+            txtBoxAgility.MaxLength = 2;
+            txtBoxAgility.Name = "txtBoxAgility";
+            txtBoxAgility.Size = new Size(22, 23);
+            txtBoxAgility.TabIndex = 27;
+            txtBoxAgility.Text = "0";
+            txtBoxAgility.TextAlign = HorizontalAlignment.Center;
+            txtBoxAgility.Leave += txtBoxAgility_Leave;
             // 
-            // button5
+            // btnCommit
             // 
-            button5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button5.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(104, 175);
-            button5.Margin = new Padding(0);
-            button5.Name = "button5";
-            button5.RightToLeft = RightToLeft.No;
-            button5.Size = new Size(23, 22);
-            button5.TabIndex = 11;
-            button5.Text = "-";
-            button5.UseVisualStyleBackColor = true;
+            btnCommit.Location = new Point(464, 198);
+            btnCommit.Name = "btnCommit";
+            btnCommit.Size = new Size(75, 23);
+            btnCommit.TabIndex = 26;
+            btnCommit.Text = "Commit";
+            btnCommit.UseVisualStyleBackColor = true;
+            btnCommit.Click += btnCommit_Click;
             // 
-            // button6
+            // txtBoxPower
             // 
-            button6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button6.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Location = new Point(153, 175);
-            button6.Margin = new Padding(0);
-            button6.Name = "button6";
-            button6.RightToLeft = RightToLeft.No;
-            button6.Size = new Size(23, 22);
-            button6.TabIndex = 10;
-            button6.Text = "+";
-            button6.TextAlign = ContentAlignment.MiddleLeft;
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(52, 136);
-            label5.Name = "label5";
-            label5.Size = new Size(38, 15);
-            label5.TabIndex = 9;
-            label5.Text = "Focus";
-            // 
-            // button7
-            // 
-            button7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button7.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.Location = new Point(104, 132);
-            button7.Margin = new Padding(0);
-            button7.Name = "button7";
-            button7.RightToLeft = RightToLeft.No;
-            button7.Size = new Size(23, 22);
-            button7.TabIndex = 8;
-            button7.Text = "-";
-            button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            button8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button8.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.Location = new Point(153, 132);
-            button8.Margin = new Padding(0);
-            button8.Name = "button8";
-            button8.RightToLeft = RightToLeft.No;
-            button8.Size = new Size(23, 22);
-            button8.TabIndex = 7;
-            button8.Text = "+";
-            button8.TextAlign = ContentAlignment.MiddleLeft;
-            button8.UseVisualStyleBackColor = true;
+            txtBoxPower.Location = new Point(129, 54);
+            txtBoxPower.MaxLength = 2;
+            txtBoxPower.Name = "txtBoxPower";
+            txtBoxPower.Size = new Size(22, 23);
+            txtBoxPower.TabIndex = 25;
+            txtBoxPower.Text = "0";
+            txtBoxPower.TextAlign = HorizontalAlignment.Center;
+            txtBoxPower.Leave += txtBoxPower_Leave;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(301, 179);
+            label6.Location = new Point(308, 101);
             label6.Name = "label6";
             label6.Size = new Size(43, 15);
             label6.TabIndex = 24;
             label6.Text = "Energy";
             // 
-            // button9
+            // btnMinusIntuition
             // 
-            button9.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button9.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button9.Location = new Point(364, 175);
-            button9.Margin = new Padding(0);
-            button9.Name = "button9";
-            button9.RightToLeft = RightToLeft.No;
-            button9.Size = new Size(23, 22);
-            button9.TabIndex = 23;
-            button9.Text = "-";
-            button9.UseVisualStyleBackColor = true;
+            btnMinusIntuition.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnMinusIntuition.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMinusIntuition.Location = new Point(362, 138);
+            btnMinusIntuition.Margin = new Padding(0);
+            btnMinusIntuition.Name = "btnMinusIntuition";
+            btnMinusIntuition.RightToLeft = RightToLeft.No;
+            btnMinusIntuition.Size = new Size(23, 22);
+            btnMinusIntuition.TabIndex = 23;
+            btnMinusIntuition.Text = "-";
+            btnMinusIntuition.UseVisualStyleBackColor = true;
+            btnMinusIntuition.Click += btnMinusIntuition_Click;
             // 
-            // button10
+            // btnAddIntuition
             // 
-            button10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button10.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button10.Location = new Point(413, 175);
-            button10.Margin = new Padding(0);
-            button10.Name = "button10";
-            button10.RightToLeft = RightToLeft.No;
-            button10.Size = new Size(23, 22);
-            button10.TabIndex = 22;
-            button10.Text = "+";
-            button10.TextAlign = ContentAlignment.MiddleLeft;
-            button10.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(281, 136);
-            label7.Name = "label7";
-            label7.Size = new Size(63, 15);
-            label7.TabIndex = 21;
-            label7.Text = "Awareness";
-            // 
-            // button11
-            // 
-            button11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button11.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button11.Location = new Point(364, 132);
-            button11.Margin = new Padding(0);
-            button11.Name = "button11";
-            button11.RightToLeft = RightToLeft.No;
-            button11.Size = new Size(23, 22);
-            button11.TabIndex = 20;
-            button11.Text = "-";
-            button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            button12.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button12.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button12.Location = new Point(413, 132);
-            button12.Margin = new Padding(0);
-            button12.Name = "button12";
-            button12.RightToLeft = RightToLeft.No;
-            button12.Size = new Size(23, 22);
-            button12.TabIndex = 19;
-            button12.Text = "+";
-            button12.TextAlign = ContentAlignment.MiddleLeft;
-            button12.UseVisualStyleBackColor = true;
+            btnAddIntuition.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAddIntuition.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddIntuition.Location = new Point(415, 138);
+            btnAddIntuition.Margin = new Padding(0);
+            btnAddIntuition.Name = "btnAddIntuition";
+            btnAddIntuition.RightToLeft = RightToLeft.No;
+            btnAddIntuition.Size = new Size(23, 22);
+            btnAddIntuition.TabIndex = 22;
+            btnAddIntuition.Text = "+";
+            btnAddIntuition.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddIntuition.UseVisualStyleBackColor = true;
+            btnAddIntuition.Click += btnAddIntuition_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(292, 95);
+            label8.Location = new Point(299, 141);
             label8.Name = "label8";
             label8.Size = new Size(52, 15);
             label8.TabIndex = 18;
             label8.Text = "Intuition";
             // 
-            // button13
+            // btnMinusEnergy
             // 
-            button13.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button13.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button13.Location = new Point(364, 91);
-            button13.Margin = new Padding(0);
-            button13.Name = "button13";
-            button13.RightToLeft = RightToLeft.No;
-            button13.Size = new Size(23, 22);
-            button13.TabIndex = 17;
-            button13.Text = "-";
-            button13.UseVisualStyleBackColor = true;
+            btnMinusEnergy.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnMinusEnergy.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMinusEnergy.Location = new Point(362, 98);
+            btnMinusEnergy.Margin = new Padding(0);
+            btnMinusEnergy.Name = "btnMinusEnergy";
+            btnMinusEnergy.RightToLeft = RightToLeft.No;
+            btnMinusEnergy.Size = new Size(23, 22);
+            btnMinusEnergy.TabIndex = 17;
+            btnMinusEnergy.Text = "-";
+            btnMinusEnergy.UseVisualStyleBackColor = true;
+            btnMinusEnergy.Click += btnMinusEnergy_Click;
             // 
-            // button14
+            // btnAddEnergy
             // 
-            button14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button14.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button14.Location = new Point(413, 91);
-            button14.Margin = new Padding(0);
-            button14.Name = "button14";
-            button14.RightToLeft = RightToLeft.No;
-            button14.Size = new Size(23, 22);
-            button14.TabIndex = 16;
-            button14.Text = "+";
-            button14.TextAlign = ContentAlignment.MiddleLeft;
-            button14.UseVisualStyleBackColor = true;
+            btnAddEnergy.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAddEnergy.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddEnergy.Location = new Point(415, 98);
+            btnAddEnergy.Margin = new Padding(0);
+            btnAddEnergy.Name = "btnAddEnergy";
+            btnAddEnergy.RightToLeft = RightToLeft.No;
+            btnAddEnergy.Size = new Size(23, 22);
+            btnAddEnergy.TabIndex = 16;
+            btnAddEnergy.Text = "+";
+            btnAddEnergy.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddEnergy.UseVisualStyleBackColor = true;
+            btnAddEnergy.Click += btnAddEnergy_Click;
             // 
-            // label9
+            // label4
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(312, 53);
-            label9.Name = "label9";
-            label9.Size = new Size(32, 15);
-            label9.TabIndex = 15;
-            label9.Text = "Luck";
+            label4.AutoSize = true;
+            label4.Location = new Point(292, 62);
+            label4.Name = "label4";
+            label4.Size = new Size(59, 15);
+            label4.TabIndex = 12;
+            label4.Text = "Resilience";
             // 
-            // button15
+            // btnMinusResilience
             // 
-            button15.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button15.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button15.Location = new Point(364, 49);
-            button15.Margin = new Padding(0);
-            button15.Name = "button15";
-            button15.RightToLeft = RightToLeft.No;
-            button15.Size = new Size(23, 22);
-            button15.TabIndex = 14;
-            button15.Text = "-";
-            button15.UseVisualStyleBackColor = true;
+            btnMinusResilience.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnMinusResilience.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMinusResilience.Location = new Point(362, 59);
+            btnMinusResilience.Margin = new Padding(0);
+            btnMinusResilience.Name = "btnMinusResilience";
+            btnMinusResilience.RightToLeft = RightToLeft.No;
+            btnMinusResilience.Size = new Size(23, 22);
+            btnMinusResilience.TabIndex = 11;
+            btnMinusResilience.Text = "-";
+            btnMinusResilience.UseVisualStyleBackColor = true;
+            btnMinusResilience.Click += btnMinusResilience_Click;
             // 
-            // button16
+            // btnAddResilience
             // 
-            button16.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button16.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button16.Location = new Point(413, 49);
-            button16.Margin = new Padding(0);
-            button16.Name = "button16";
-            button16.RightToLeft = RightToLeft.No;
-            button16.Size = new Size(23, 22);
-            button16.TabIndex = 13;
-            button16.Text = "+";
-            button16.TextAlign = ContentAlignment.MiddleLeft;
-            button16.UseVisualStyleBackColor = true;
+            btnAddResilience.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAddResilience.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddResilience.Location = new Point(414, 59);
+            btnAddResilience.Margin = new Padding(0);
+            btnAddResilience.Name = "btnAddResilience";
+            btnAddResilience.RightToLeft = RightToLeft.No;
+            btnAddResilience.Size = new Size(23, 22);
+            btnAddResilience.TabIndex = 10;
+            btnAddResilience.Text = "+";
+            btnAddResilience.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddResilience.UseVisualStyleBackColor = true;
+            btnAddResilience.Click += btnAddResilience_Click;
             // 
-            // textBox1
+            // label5
             // 
-            textBox1.Location = new Point(129, 48);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(22, 23);
-            textBox1.TabIndex = 25;
+            label5.AutoSize = true;
+            label5.Location = new Point(52, 98);
+            label5.Name = "label5";
+            label5.Size = new Size(38, 15);
+            label5.TabIndex = 9;
+            label5.Text = "Focus";
+            // 
+            // btnMinusFocus
+            // 
+            btnMinusFocus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnMinusFocus.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMinusFocus.Location = new Point(104, 94);
+            btnMinusFocus.Margin = new Padding(0);
+            btnMinusFocus.Name = "btnMinusFocus";
+            btnMinusFocus.RightToLeft = RightToLeft.No;
+            btnMinusFocus.Size = new Size(23, 22);
+            btnMinusFocus.TabIndex = 8;
+            btnMinusFocus.Text = "-";
+            btnMinusFocus.UseVisualStyleBackColor = true;
+            btnMinusFocus.Click += btnMinusFocus_Click;
+            // 
+            // btnAddFocus
+            // 
+            btnAddFocus.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAddFocus.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddFocus.Location = new Point(155, 94);
+            btnAddFocus.Margin = new Padding(0);
+            btnAddFocus.Name = "btnAddFocus";
+            btnAddFocus.RightToLeft = RightToLeft.No;
+            btnAddFocus.Size = new Size(23, 22);
+            btnAddFocus.TabIndex = 7;
+            btnAddFocus.Text = "+";
+            btnAddFocus.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddFocus.UseVisualStyleBackColor = true;
+            btnAddFocus.Click += btnAddFocus_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(52, 137);
+            label3.Name = "label3";
+            label3.Size = new Size(41, 15);
+            label3.TabIndex = 6;
+            label3.Text = "Agility";
+            // 
+            // btnMinusAgility
+            // 
+            btnMinusAgility.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnMinusAgility.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMinusAgility.Location = new Point(104, 133);
+            btnMinusAgility.Margin = new Padding(0);
+            btnMinusAgility.Name = "btnMinusAgility";
+            btnMinusAgility.RightToLeft = RightToLeft.No;
+            btnMinusAgility.Size = new Size(23, 22);
+            btnMinusAgility.TabIndex = 5;
+            btnMinusAgility.Text = "-";
+            btnMinusAgility.UseVisualStyleBackColor = true;
+            btnMinusAgility.Click += btnMinusAgility_Click;
+            // 
+            // btnAddAgility
+            // 
+            btnAddAgility.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAddAgility.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddAgility.Location = new Point(156, 133);
+            btnAddAgility.Margin = new Padding(0);
+            btnAddAgility.Name = "btnAddAgility";
+            btnAddAgility.RightToLeft = RightToLeft.No;
+            btnAddAgility.Size = new Size(23, 22);
+            btnAddAgility.TabIndex = 4;
+            btnAddAgility.Text = "+";
+            btnAddAgility.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddAgility.UseVisualStyleBackColor = true;
+            btnAddAgility.Click += btnAddAgility_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(52, 59);
+            label2.Name = "label2";
+            label2.Size = new Size(40, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Power";
+            // 
+            // btnMinusPower
+            // 
+            btnMinusPower.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnMinusPower.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMinusPower.Location = new Point(104, 55);
+            btnMinusPower.Margin = new Padding(0);
+            btnMinusPower.Name = "btnMinusPower";
+            btnMinusPower.RightToLeft = RightToLeft.No;
+            btnMinusPower.Size = new Size(23, 22);
+            btnMinusPower.TabIndex = 2;
+            btnMinusPower.Text = "-";
+            btnMinusPower.UseVisualStyleBackColor = true;
+            btnMinusPower.Click += btnMinusPower_Click;
+            // 
+            // btnAddPower
+            // 
+            btnAddPower.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAddPower.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddPower.Location = new Point(154, 55);
+            btnAddPower.Margin = new Padding(0);
+            btnAddPower.Name = "btnAddPower";
+            btnAddPower.RightToLeft = RightToLeft.No;
+            btnAddPower.Size = new Size(23, 22);
+            btnAddPower.TabIndex = 1;
+            btnAddPower.Text = "+";
+            btnAddPower.TextAlign = ContentAlignment.MiddleLeft;
+            btnAddPower.UseVisualStyleBackColor = true;
+            btnAddPower.Click += btnAddPower_Click;
             // 
             // GamePlay
             // 
@@ -403,6 +436,7 @@
             Controls.Add(label1);
             Name = "GamePlay";
             Size = new Size(816, 494);
+            Load += GamePlay_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -413,30 +447,32 @@
 
         private Label label1;
         private Panel panel1;
-        private Button button2;
-        private Button button1;
+        private Button btnMinusPower;
+        private Button btnAddPower;
         private Label label3;
-        private Button button3;
-        private Button button4;
+        private Button btnMinusAgility;
+        private Button btnAddAgility;
         private Label label2;
         private Label label6;
-        private Button button9;
-        private Button button10;
-        private Label label7;
-        private Button button11;
-        private Button button12;
+        private Button btnMinusIntuition;
+        private Button btnAddIntuition;
         private Label label8;
-        private Button button13;
-        private Button button14;
-        private Label label9;
-        private Button button15;
-        private Button button16;
+        private Button btnMinusEnergy;
+        private Button btnAddEnergy;
         private Label label4;
-        private Button button5;
-        private Button button6;
+        private Button btnMinusResilience;
+        private Button btnAddResilience;
         private Label label5;
-        private Button button7;
-        private Button button8;
-        private TextBox textBox1;
+        private Button btnMinusFocus;
+        private Button btnAddFocus;
+        private TextBox txtBoxPower;
+        private Button btnCommit;
+        private TextBox txtBoxIntuition;
+        private TextBox txtBoxEnergy;
+        private TextBox txtBoxResilience;
+        private TextBox txtBoxFocus;
+        private TextBox txtBoxAgility;
+        private Label lblPoints;
+        private Label label7;
     }
 }

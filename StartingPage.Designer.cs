@@ -28,19 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             btnStart = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(287, 137);
-            label1.Name = "label1";
-            label1.Size = new Size(233, 128);
-            label1.TabIndex = 0;
-            label1.Text = "Title";
             // 
             // btnStart
             // 
@@ -52,21 +43,30 @@
             btnStart.UseVisualStyleBackColor = true;
             btnStart.Click += btnStart_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.TitlePage;
+            pictureBox1.Location = new Point(102, 31);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(595, 335);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // StartingPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(pictureBox1);
             Controls.Add(btnStart);
-            Controls.Add(label1);
             Name = "StartingPage";
             Size = new Size(816, 494);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private Button btnStart;
+        private PictureBox pictureBox1;
     }
 }

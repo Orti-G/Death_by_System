@@ -10,23 +10,17 @@ using System.Windows.Forms;
 
 namespace Death_by_System
 {
-    public partial class MainPanel : Form
+    public partial class AboutUs : UserControl
     {
-        public static MainPanel _mainpanel;
-        public MainPanel()
+        public AboutUs()
         {
             InitializeComponent();
-            panelCTN.Controls.Add(new StartingPage());
         }
 
-        private void panelCTN_Paint(object sender, PaintEventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void MainPanel_Load(object sender, EventArgs e)
-        {
-
+            MainPanel._mainpanel.panelCTN.Controls.Clear();
+            MainPanel._mainpanel.panelCTN.Controls.Add(new StartingPage());
         }
     }
 }

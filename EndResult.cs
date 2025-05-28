@@ -10,32 +10,30 @@ using System.Windows.Forms;
 
 namespace Death_by_System
 {
-    public partial class StartingPage : UserControl
+    public partial class EndResult : UserControl
     {
-        public StartingPage()
+        public EndResult()
         {
             InitializeComponent();
         }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label_Startbtn_Click(object sender, EventArgs e)
-        {
             MainPanel._mainpanel.panelCTN.Controls.Clear();
-            MainPanel._mainpanel.panelCTN.Controls.Add(new GuidePage());
+            MainPanel._mainpanel.panelCTN.Controls.Add(new StartingPage());
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            MainPanel._mainpanel.panelCTN.Controls.Clear();
-            MainPanel._mainpanel.panelCTN.Controls.Add(new AboutUs());
-        }
-
-        private void label_Leaderboard_Click(object sender, EventArgs e)
+        private void btn_Leaderboard_Click(object sender, EventArgs e)
         {
             MainPanel._mainpanel.panelCTN.Controls.Clear();
             MainPanel._mainpanel.panelCTN.Controls.Add(new LeaderBoard());

@@ -10,21 +10,14 @@ using System.Windows.Forms;
 
 namespace Death_by_System
 {
-    public partial class MainPanel : Form
+    public partial class LevelTransition : UserControl
     {
-        public static MainPanel _mainpanel;
-        public MainPanel()
+        public LevelTransition()
         {
             InitializeComponent();
-            panelCTN.Controls.Add(new StartingPage());
         }
 
-        private void panelCTN_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void MainPanel_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

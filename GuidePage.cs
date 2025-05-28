@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Death_by_System
 {
@@ -22,10 +23,32 @@ namespace Death_by_System
             textBoxName.Text = "";
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+
+        private void label_Startbtn_Click(object sender, EventArgs e)
         {
             MainPanel._mainpanel.panelCTN.Controls.Clear();
-            MainPanel._mainpanel.panelCTN.Controls.Add(new GamePlay());
+            MainPanel._mainpanel.panelCTN.Controls.Add(new LevelTransition());
+
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = 3500;
+
+            timer.Tick += (s, e2) =>
+            {
+                timer.Stop();
+                MainPanel._mainpanel.panelCTN.Controls.Clear();
+
+                GamePlay gameplay = new GamePlay();
+                MainPanel._mainpanel.panelCTN.Controls.Add(gameplay);
+
+                gameplay.StartRevealSequence();
+            };
+
+            timer.Start();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

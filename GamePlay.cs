@@ -40,7 +40,16 @@ namespace Death_by_System
 
         private async void btnCommit_Click(object sender, EventArgs e)
         {
-            await CallPredictionAPIAsync();
+            //await CallPredictionAPIAsync();
+
+            StatsPanel.Controls.Clear();
+
+            CharacterSurvivalChance survivalControl = new CharacterSurvivalChance();
+            survivalControl.Dock = DockStyle.Fill;
+            StatsPanel.Controls.Add(survivalControl);
+
+            survivalControl.StartRevealSequence();
+
         }
 
         private async Task<PredictionResult> CallPredictionAPIAsync()
@@ -72,6 +81,52 @@ namespace Death_by_System
             var prediction = JsonConvert.DeserializeObject<PredictionResult>(result);
             MessageBox.Show($"Prediction: {prediction.PredictedClass}\nSurvivability: {prediction.SurvivalChance}");
             return prediction;
+        }
+
+        public async void StartRevealSequence()
+        {
+            // Step 1: Hide all elements initially
+            StatsPanel.Visible = false;
+            panel_Title.Visible = false;
+            panel_Scenario.Visible = false;
+            label_Scenario.Visible = false;
+            label_textScenario.Visible = false;
+
+            // Step 2: Reveal panel_Title after 1 second
+            await Task.Delay(1000);
+            panel_Title.Visible = true;
+
+            // Step 3: Reveal panel_Scenario after another second
+            await Task.Delay(1000);
+            panel_Scenario.Visible = true;
+
+            // Step 4: Reveal label_Scenario after another second
+            await Task.Delay(1000);
+            label_Scenario.Visible = true;
+
+            // Step 5: Hide label_Scenario, then start typing into label_textScenario
+            await Task.Delay(1000);
+            label_Scenario.Visible = false;
+            label_textScenario.Text = "";
+            label_textScenario.Visible = true;
+
+            string scenarioText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
+                                  "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer " +
+                                  "took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, " +
+                                  "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s " +
+                                  "with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing " +
+                                  "software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+            // Typing animation: type one character at a time
+            foreach (char c in scenarioText)
+            {
+                label_textScenario.Text += c;
+                await Task.Delay(10); // Adjust typing speed here (10 ms per char)
+            }
+
+            // Step 6: Once typing is complete, reveal StatsPanel
+            await Task.Delay(500); // Optional pause after typing
+            StatsPanel.Visible = true;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -390,6 +445,21 @@ namespace Death_by_System
                 txtBoxIntuition.Text = (Convert.ToInt32(txtBoxIntuition.Text) - 1).ToString();
                 lblPoints.Text = (PlayerPoints - (Convert.ToInt32(txtBoxPower.Text) + Convert.ToInt32(txtBoxFocus.Text) + Convert.ToInt32(txtBoxAgility.Text) + Convert.ToInt32(txtBoxResilience.Text) + Convert.ToInt32(txtBoxEnergy.Text) + Convert.ToInt32(txtBoxIntuition.Text))).ToString();
             }
+        }
+
+        private void lblPoints_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

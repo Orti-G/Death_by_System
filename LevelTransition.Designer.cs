@@ -1,6 +1,6 @@
 ﻿namespace Death_by_System
 {
-    partial class MainPanel
+    partial class LevelTransition
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panelCTN = new Panel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // panelCTN
+            // pictureBox1
             // 
-            panelCTN.Dock = DockStyle.Fill;
-            panelCTN.Location = new Point(0, 0);
-            panelCTN.Margin = new Padding(3, 4, 3, 4);
-            panelCTN.Name = "panelCTN";
-            panelCTN.Size = new Size(1200, 676);
-            panelCTN.TabIndex = 0;
-            panelCTN.Paint += panelCTN_Paint;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.GIF_Transition_level1;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1200, 676);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
-            // MainPanel
+            // LevelTransition
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1200, 676);
-            Controls.Add(panelCTN);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "MainPanel";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Death by System";
-            Load += MainPanel_Load;
+            Controls.Add(pictureBox1);
+            Name = "LevelTransition";
+            Text = "LevelTransition";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        public Panel panelCTN;
+        private PictureBox pictureBox1;
     }
 }

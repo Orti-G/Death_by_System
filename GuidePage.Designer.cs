@@ -28,58 +28,198 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             textBoxName = new TextBox();
-            btnSubmit = new Button();
+            panel1 = new Panel();
+            label_Startbtn = new Label();
+            pictureBox3 = new PictureBox();
+            panel2 = new Panel();
+            label1 = new Label();
+            panel3 = new Panel();
+            label11 = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(18, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(77, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Guide";
             // 
             // textBoxName
             // 
             textBoxName.BorderStyle = BorderStyle.FixedSingle;
-            textBoxName.Location = new Point(318, 436);
+            textBoxName.Font = new Font("Upheaval TT (BRK)", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBoxName.Location = new Point(286, 533);
+            textBoxName.Margin = new Padding(3, 4, 3, 4);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(148, 23);
+            textBoxName.Size = new Size(648, 32);
             textBoxName.TabIndex = 1;
-            textBoxName.Text = "Enter your Name";
+            textBoxName.Text = "Enter Your Player Name Here";
+            textBoxName.TextAlign = HorizontalAlignment.Center;
             textBoxName.MouseClick += textBoxName_MouseClick;
             // 
-            // btnSubmit
+            // panel1
             // 
-            btnSubmit.Location = new Point(487, 436);
-            btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(75, 23);
-            btnSubmit.TabIndex = 2;
-            btnSubmit.Text = "Submit";
-            btnSubmit.UseVisualStyleBackColor = true;
-            btnSubmit.Click += btnSubmit_Click;
+            panel1.BackgroundImage = Properties.Resources.GIF_MainBackGround;
+            panel1.Controls.Add(textBoxName);
+            panel1.Controls.Add(label_Startbtn);
+            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(panel2);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(label11);
+            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(pictureBox5);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1200, 676);
+            panel1.TabIndex = 3;
+            // 
+            // label_Startbtn
+            // 
+            label_Startbtn.AutoSize = true;
+            label_Startbtn.BackColor = Color.White;
+            label_Startbtn.Font = new Font("Press Start 2P", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_Startbtn.ForeColor = SystemColors.MenuHighlight;
+            label_Startbtn.Location = new Point(1019, 604);
+            label_Startbtn.Name = "label_Startbtn";
+            label_Startbtn.Size = new Size(135, 20);
+            label_Startbtn.TabIndex = 7;
+            label_Startbtn.Text = "SUBMIT";
+            label_Startbtn.Click += label_Startbtn_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = Properties.Resources.pictureButton;
+            pictureBox3.Location = new Point(981, 553);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(203, 106);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 5;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = SystemColors.ActiveCaptionText;
+            panel2.Controls.Add(label1);
+            panel2.Location = new Point(459, 31);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(281, 46);
+            panel2.TabIndex = 10;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.None;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Upheaval TT (BRK)", 22.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Honeydew;
+            label1.Location = new Point(-77, 6);
+            label1.Name = "label1";
+            label1.Size = new Size(438, 35);
+            label1.TabIndex = 8;
+            label1.Text = "GUIDE";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = SystemColors.ActiveCaptionText;
+            panel3.Location = new Point(244, 515);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(720, 67);
+            panel3.TabIndex = 11;
+            // 
+            // label11
+            // 
+            label11.BackColor = Color.Transparent;
+            label11.Font = new Font("Squada One", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.DimGray;
+            label11.Location = new Point(366, 490);
+            label11.Name = "label11";
+            label11.Size = new Size(487, 41);
+            label11.TabIndex = 25;
+            label11.Text = "IF YOU ARE READY, SUBMIT YOUR PLAYER NAME\r\n";
+            label11.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = Properties.Resources.GIF_RobotGuide;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(19, 354);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(261, 264);
+            pictureBox2.TabIndex = 12;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.GIF_MainBackGround1;
+            pictureBox1.Location = new Point(165, 104);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(867, 368);
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.BackgroundImage = Properties.Resources.LeftArrow;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Location = new Point(82, 233);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(100, 88);
+            pictureBox4.TabIndex = 13;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.BackgroundImage = Properties.Resources.RightButton_new_;
+            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox5.Location = new Point(1008, 254);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(100, 88);
+            pictureBox5.TabIndex = 14;
+            pictureBox5.TabStop = false;
             // 
             // GuidePage
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(btnSubmit);
-            Controls.Add(textBoxName);
-            Controls.Add(label1);
+            Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "GuidePage";
-            Size = new Size(816, 494);
+            Size = new Size(1200, 676);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private TextBox textBoxName;
-        private Button btnSubmit;
+        private Panel panel1;
+        private PictureBox pictureBox3;
+        private Label label_Startbtn;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private Panel panel2;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox2;
+        private Panel panel3;
+        private PictureBox pictureBox5;
+        private Label label11;
     }
 }

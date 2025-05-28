@@ -1,6 +1,6 @@
 ﻿namespace Death_by_System
 {
-    partial class MainPanel
+    partial class EndResults
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panelCTN = new Panel();
+            panel1 = new Panel();
             SuspendLayout();
             // 
-            // panelCTN
+            // panel1
             // 
-            panelCTN.Dock = DockStyle.Fill;
-            panelCTN.Location = new Point(0, 0);
-            panelCTN.Margin = new Padding(3, 4, 3, 4);
-            panelCTN.Name = "panelCTN";
-            panelCTN.Size = new Size(1200, 676);
-            panelCTN.TabIndex = 0;
-            panelCTN.Paint += panelCTN_Paint;
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1200, 676);
+            panel1.TabIndex = 0;
             // 
-            // MainPanel
+            // EndResults
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1200, 676);
-            Controls.Add(panelCTN);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "MainPanel";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Death by System";
-            Load += MainPanel_Load;
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "EndResults";
+            Text = "EndResults";
             ResumeLayout(false);
         }
 
         #endregion
 
-        public Panel panelCTN;
+        private Panel panel1;
     }
 }

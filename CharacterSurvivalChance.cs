@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Death_by_System.GamePlay;
 
 namespace Death_by_System
 {
@@ -33,8 +34,8 @@ namespace Death_by_System
             label_Class.Visible = true;
 
             await Task.Delay(4000);
-            pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource
-            label_Class.Text = "FIGHTER";
+            ClassAnalyzer();
+            
 
             await Task.Delay(1000);
             pictureBox_Loading.Visible = true;
@@ -46,8 +47,7 @@ namespace Death_by_System
             pictureBox_Loading.Visible = false;
             label_textAbove.Visible = false;
             label_SurvivalChance.Visible = true;
-            label_Rate.Text = "65%";
-            label_Rate.Visible = true;
+            SurvivalChanceAnalyzer();
 
             await Task.Delay(2000);
             label_Points.Text = "+5 points";
@@ -56,6 +56,37 @@ namespace Death_by_System
 
             await Task.Delay(1000);
             btnNext.Visible = true;
+        }
+        private void ClassAnalyzer() 
+        {
+            List<StageResult> list = new List<StageResult>();
+
+            MessageBox.Show(Convert.ToString(DataStorage.stageResult.Count));
+            if (GamePlay.predictedClass == "Fighter")
+            {
+                pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource
+                label_Class.Text = "FIGHTER";
+            }
+            else if (GamePlay.predictedClass == "Mage")
+            {
+                pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource
+                label_Class.Text = "MAGE";
+            }
+            else if (GamePlay.predictedClass == "Assassin")
+            {
+                pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource
+                label_Class.Text = "ASSASSIN";
+            }
+            else
+            {
+                label_Class.Text = "ERROR";
+            }
+        }
+
+        private void SurvivalChanceAnalyzer()
+        {
+            label_Rate.Text = Convert.ToString(GamePlay.predictedSurvivalChance) + "%";
+            label_Rate.Visible = true;
         }
 
         private void label11_Click(object sender, EventArgs e)

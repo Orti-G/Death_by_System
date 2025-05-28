@@ -18,6 +18,8 @@ namespace Death_by_System
 {
     public partial class GamePlay : UserControl
     {
+        public static string predictedClass;
+        public static float predictedSurvivalChance;
         public class PredictionResult
         {
             [JsonProperty("PredictedClass")]
@@ -26,6 +28,7 @@ namespace Death_by_System
             [JsonProperty("SurvivalChance")]
             public float SurvivalChance { get; set; }
         }
+
         private int PlayerPoints = 100;
 
         public GamePlay()
@@ -40,7 +43,8 @@ namespace Death_by_System
 
         private async void btnCommit_Click(object sender, EventArgs e)
         {
-            //await CallPredictionAPIAsync();
+            await CallPredictionAPIAsync();
+
 
             StatsPanel.Controls.Clear();
 
@@ -79,7 +83,9 @@ namespace Death_by_System
             }
 
             var prediction = JsonConvert.DeserializeObject<PredictionResult>(result);
-            MessageBox.Show($"Prediction: {prediction.PredictedClass}\nSurvivability: {prediction.SurvivalChance}");
+            DataStorage.stageResult.Add(new StageResult(Convert.ToString(label_Settings.Text), label_Scenario.Text, prediction.PredictedClass, prediction.SurvivalChance));     
+            predictedClass = prediction.PredictedClass;
+            predictedSurvivalChance = prediction.SurvivalChance;
             return prediction;
         }
 
@@ -121,7 +127,7 @@ namespace Death_by_System
             foreach (char c in scenarioText)
             {
                 label_textScenario.Text += c;
-                await Task.Delay(10); // Adjust typing speed here (10 ms per char)
+                //await Task.Delay(10); // Adjust typing speed here (10 ms per char)
             }
 
             // Step 6: Once typing is complete, reveal StatsPanel

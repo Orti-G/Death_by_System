@@ -14,6 +14,7 @@ namespace Death_by_System
 {
     public partial class GuidePage : UserControl
     {
+
         public GuidePage()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace Death_by_System
 
         private void label_Startbtn_Click(object sender, EventArgs e)
         {
+            EndResult.PlayerName = textBoxName.Text;
             MainPanel._mainpanel.panelCTN.Controls.Clear();
             MainPanel._mainpanel.panelCTN.Controls.Add(new LevelTransition());
 

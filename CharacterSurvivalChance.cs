@@ -36,7 +36,6 @@ namespace Death_by_System
             await Task.Delay(4000);
             ClassAnalyzer();
 
-
             await Task.Delay(1000);
             pictureBox_Loading.Visible = true;
             panel_BG.Visible = true;
@@ -59,9 +58,6 @@ namespace Death_by_System
         }
         private void ClassAnalyzer()
         {
-            List<StageResult> list = new List<StageResult>();
-
-            MessageBox.Show(Convert.ToString(DataStorage.stageResult.Count));
             if (GamePlay.predictedClass == "Fighter")
             {
                 pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource

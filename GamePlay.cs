@@ -83,9 +83,10 @@ namespace Death_by_System
             }
 
             var prediction = JsonConvert.DeserializeObject<PredictionResult>(result);
-            DataStorage.stageResult.Add(new StageResult(Convert.ToString(label_Settings.Text), label_Scenario.Text, prediction.PredictedClass, prediction.SurvivalChance));     
             predictedClass = prediction.PredictedClass;
             predictedSurvivalChance = prediction.SurvivalChance;
+            DataStorage.stageResult.Enqueue(new StageResult(predictedClass,predictedSurvivalChance));  
+            
             return prediction;
         }
 

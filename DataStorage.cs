@@ -8,6 +8,7 @@ namespace Death_by_System
 {
     internal class DataStorage
     {
-        public static List<StageResult> stageResult = new List<StageResult>();
+        public static Queue<StageResult> stageResult = new Queue<StageResult>();
+        public static List<GameContentCompilation> gameHistory = new List<GameContentCompilation>();
     }
 }

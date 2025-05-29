@@ -12,12 +12,10 @@ namespace Death_by_System
     public class GameContentCompilation
     {
         private string PlayerName;
-        private StageResult[] EachStageResult;
         private float AverageSC;
-        public GameContentCompilation(string playerName, StageResult[] arr, float averageSC) 
+        public GameContentCompilation(string playerName, float averageSC) 
         {
             PlayerName = playerName; 
-            EachStageResult = arr;
             AverageSC = averageSC;
         }
 
@@ -27,26 +25,14 @@ namespace Death_by_System
   
     public class StageResult
     {
-        private string StageName;
-        private string StageDesc;
         private string PlayerCharacter;
         private float SurvivalChance;
-        public StageResult(string stageName, string stageDesc, string playerCharacter, float survivalChance)
+        public StageResult(string playerCharacter, float survivalChance)
         {
-            StageName = stageName;
-            StageDesc = stageDesc;
             PlayerCharacter = playerCharacter;
             SurvivalChance = survivalChance;
         }
 
-        public string GetStageName()
-        {
-            return StageName; 
-        }
-        public string GetStageDesc()
-        {
-            return StageDesc;
-        }
         public string GetPlayerCharacter()
         {
             return PlayerCharacter;

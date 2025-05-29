@@ -78,13 +78,18 @@ namespace Death_by_System
         static string scene3 = "A corrupt Baron holds a vital ledger detailing his illicit activities, hidden within his heavily guarded manor during a grand gala." +
                         " Direct assault is impossible due to overwhelming security and noble guests. The ledger is in a locked strongbox in his private study, guarded by patrols and magical alarms." +
                         "The mission requires precise lockpicking, and swift extraction without alerting anyone. Which class is most crucial for success?";
-
-        Dictionary<string, string> gameScenes = new Dictionary<string, string>
+        public static string GetScenesText(string input) 
+        {
+            Dictionary<string, string> gameScenes = new Dictionary<string, string>
             {
-                { "Echoes of Collapse", scene1 },
-                { "Whispers of the Forgotten", scene2 },
-                { "Gala of Deception", scene3 }
+                { "Whisperwood Forest", scene1 },
+                { "Cursed Ashland", scene2 },
+                { "Volcanic Wasteland", scene3 }
             };
+
+            return gameScenes[input];
+        }
+        
     }
     
 }

@@ -89,7 +89,7 @@ namespace Death_by_System
             return prediction;
         }
 
-        public async void StartRevealSequence()
+        public async void StartRevealSequence(string scenario)
         {
             // Step 1: Hide all elements initially
             StatsPanel.Visible = false;
@@ -116,12 +116,7 @@ namespace Death_by_System
             label_textScenario.Text = "";
             label_textScenario.Visible = true;
 
-            string scenarioText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. " +
-                                  "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer " +
-                                  "took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, " +
-                                  "but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s " +
-                                  "with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing " +
-                                  "software like Aldus PageMaker including versions of Lorem Ipsum.";
+            string scenarioText = scenario;
 
             // Typing animation: type one character at a time
             foreach (char c in scenarioText)

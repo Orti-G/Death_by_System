@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -35,12 +36,15 @@ namespace Death_by_System
             timer.Tick += (s, e2) =>
             {
                 timer.Stop();
-                MainPanel._mainpanel.panelCTN.Controls.Clear();
-
+                MainPanel._mainpanel.panelCTN.Controls.Clear();              
                 GamePlay gameplay = new GamePlay();
+                string stageName = "Whisperwood Forest";
+                gameplay.label_Settings.Text = stageName.ToUpper();
+                gameplay.label_Level.Text = "LEVEL 1";
+                string gameSceneContent = GameContent.GetScenesText(stageName);
                 MainPanel._mainpanel.panelCTN.Controls.Add(gameplay);
 
-                gameplay.StartRevealSequence();
+                gameplay.StartRevealSequence(gameSceneContent);
             };
 
             timer.Start();

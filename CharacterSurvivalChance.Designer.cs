@@ -76,6 +76,7 @@
             btnNext.TabIndex = 27;
             btnNext.Text = "nexT";
             btnNext.UseVisualStyleBackColor = true;
+            btnNext.Click += btnNext_Click;
             // 
             // label_Points
             // 

@@ -33,16 +33,16 @@
             label_Points = new Label();
             pictureBox_Arrows = new PictureBox();
             label_textAbove = new Label();
-            pictureBox_Character = new PictureBox();
             label_Class = new Label();
             panel_BG = new Panel();
             label_SurvivalChance = new Label();
             label_Rate = new Label();
+            pictureBox_Character = new PictureBox();
             pictureBox_Loading = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Arrows).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_Character).BeginInit();
             panel_BG.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Character).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Loading).BeginInit();
             SuspendLayout();
             // 
@@ -113,16 +113,6 @@
             label_textAbove.TextAlign = ContentAlignment.MiddleCenter;
             label_textAbove.Click += label11_Click;
             // 
-            // pictureBox_Character
-            // 
-            pictureBox_Character.Image = Properties.Resources.GIF_CalculatingClass;
-            pictureBox_Character.Location = new Point(184, 40);
-            pictureBox_Character.Name = "pictureBox_Character";
-            pictureBox_Character.Size = new Size(206, 196);
-            pictureBox_Character.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox_Character.TabIndex = 0;
-            pictureBox_Character.TabStop = false;
-            // 
             // label_Class
             // 
             label_Class.BackColor = Color.Transparent;
@@ -171,6 +161,16 @@
             label_Rate.Text = "60%";
             label_Rate.TextAlign = ContentAlignment.TopCenter;
             // 
+            // pictureBox_Character
+            // 
+            pictureBox_Character.Image = Properties.Resources.GIF_CalculatingClass;
+            pictureBox_Character.Location = new Point(184, 40);
+            pictureBox_Character.Name = "pictureBox_Character";
+            pictureBox_Character.Size = new Size(206, 196);
+            pictureBox_Character.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox_Character.TabIndex = 0;
+            pictureBox_Character.TabStop = false;
+            // 
             // pictureBox_Loading
             // 
             pictureBox_Loading.Image = Properties.Resources.GIF_Loading;
@@ -190,8 +190,8 @@
             Size = new Size(1103, 297);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_Arrows).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_Character).EndInit();
             panel_BG.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Character).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Loading).EndInit();
             ResumeLayout(false);
         }
@@ -199,7 +199,6 @@
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox_Character;
         private Label label_textAbove;
         private Label label_Class;
         private PictureBox pictureBox_Arrows;
@@ -208,6 +207,7 @@
         private Panel panel_BG;
         private Label label_Points;
         private Button btnNext;
+        private PictureBox pictureBox_Character;
         private PictureBox pictureBox_Loading;
     }
 }

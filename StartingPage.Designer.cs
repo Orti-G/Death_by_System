@@ -141,11 +141,12 @@
             // pictureBox7
             // 
             pictureBox7.BackColor = Color.Transparent;
-            pictureBox7.BackgroundImage = Properties.Resources.GIF_Satellite;
             pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox7.Image = Properties.Resources.GIF_Satellite;
             pictureBox7.Location = new Point(59, 29);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(175, 178);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 14;
             pictureBox7.TabStop = false;
             // 

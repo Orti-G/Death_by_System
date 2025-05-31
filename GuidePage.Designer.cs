@@ -86,7 +86,7 @@
             label_Startbtn.BackColor = Color.White;
             label_Startbtn.Font = new Font("Press Start 2P", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_Startbtn.ForeColor = SystemColors.MenuHighlight;
-            label_Startbtn.Location = new Point(1019, 604);
+            label_Startbtn.Location = new Point(1019, 598);
             label_Startbtn.Name = "label_Startbtn";
             label_Startbtn.Size = new Size(135, 20);
             label_Startbtn.TabIndex = 7;
@@ -150,11 +150,12 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = Properties.Resources.GIF_RobotGuide;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Image = Properties.Resources.GIF_RobotGuide;
             pictureBox2.Location = new Point(19, 354);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(261, 264);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
             // 

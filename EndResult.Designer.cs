@@ -389,12 +389,12 @@
             label20.BackColor = Color.Transparent;
             label20.Font = new Font("Upheaval TT (BRK)", 22.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.White;
-            label20.Location = new Point(87, 37);
+            label20.Location = new Point(86, 37);
             label20.Name = "label20";
             label20.RightToLeft = RightToLeft.No;
-            label20.Size = new Size(570, 35);
+            label20.Size = new Size(625, 35);
             label20.TabIndex = 28;
-            label20.Text = " Pyraxis – “Throne of Flame”";
+            label20.Text = "Verdantia – “Whispering Grove”";
             label20.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2

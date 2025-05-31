@@ -10,5 +10,6 @@ namespace Death_by_System
     {
         public static Queue<StageResult> stageResult = new Queue<StageResult>();
         public static List<GameContentCompilation> gameHistory = new List<GameContentCompilation>();
+        public static List<DataSetRecord> survivalList = new List<DataSetRecord>();
     }
 }

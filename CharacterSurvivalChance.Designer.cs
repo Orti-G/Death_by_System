@@ -39,11 +39,13 @@
             pictureBox_Loading = new PictureBox();
             label_SurvivalChance = new Label();
             label_Rate = new Label();
+            pictureBox_PercentileView = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Arrows).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Character).BeginInit();
             panel_BG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_Loading).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_PercentileView).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -51,6 +53,7 @@
             panel1.BackColor = SystemColors.ActiveCaptionText;
             panel1.BackgroundImage = Properties.Resources.Panel_StatAdjusment_new2_;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox_PercentileView);
             panel1.Controls.Add(btnNext);
             panel1.Controls.Add(label_Points);
             panel1.Controls.Add(pictureBox_Arrows);
@@ -83,11 +86,11 @@
             label_Points.BackColor = Color.Transparent;
             label_Points.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label_Points.ForeColor = Color.LimeGreen;
-            label_Points.Location = new Point(793, 69);
+            label_Points.Location = new Point(801, 70);
             label_Points.Name = "label_Points";
-            label_Points.Size = new Size(95, 23);
+            label_Points.Size = new Size(109, 73);
             label_Points.TabIndex = 15;
-            label_Points.Text = "+ 5 Points";
+            label_Points.Text = "Currently at Top 00% among all stats combination";
             label_Points.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox_Arrows
@@ -186,6 +189,16 @@
             label_Rate.Text = "60.45%";
             label_Rate.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // pictureBox_PercentileView
+            // 
+            pictureBox_PercentileView.BackColor = Color.Red;
+            pictureBox_PercentileView.Location = new Point(916, 99);
+            pictureBox_PercentileView.Name = "pictureBox_PercentileView";
+            pictureBox_PercentileView.Size = new Size(22, 18);
+            pictureBox_PercentileView.TabIndex = 28;
+            pictureBox_PercentileView.TabStop = false;
+            pictureBox_PercentileView.Click += pictureBox_PercentileView_Click;
+            // 
             // CharacterSurvivalChance
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -199,6 +212,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_Character).EndInit();
             panel_BG.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_Loading).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_PercentileView).EndInit();
             ResumeLayout(false);
         }
 
@@ -215,5 +229,6 @@
         private Label label_Points;
         private Button btnNext;
         private PictureBox pictureBox_Loading;
+        private PictureBox pictureBox_PercentileView;
     }
 }

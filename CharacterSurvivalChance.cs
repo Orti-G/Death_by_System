@@ -49,7 +49,7 @@ namespace Death_by_System
             SurvivalChanceAnalyzer();
 
             await Task.Delay(2000);
-            label_Points.Text = "+5 points";
+            label_Points.Text = Convert.ToString(DataSetRanking.GetRanking(GamePlay.predictedSurvivalChance));
             label_Points.ForeColor = Color.Green;
             label_Points.Visible = true;
 
@@ -139,7 +139,7 @@ namespace Death_by_System
                     else
                     {
                         string stageName = "Volcanic Wasteland";
-                        gameplay.label_Settings.Text = stageName.ToUpper();                       
+                        gameplay.label_Settings.Text = stageName.ToUpper();
                         gameplay.label_Level.Text = "LEVEL 3";
                         gameSceneContent = GameContent.GetScenesText(stageName);
                         gameplay.panel_Scenario.BackgroundImage = Properties.Resources.ScenarioPanel_lvl3;
@@ -153,11 +153,16 @@ namespace Death_by_System
 
                 timer.Start();
             }
-            else 
+            else
             {
                 MainPanel._mainpanel.panelCTN.Controls.Clear();
                 MainPanel._mainpanel.panelCTN.Controls.Add(new EndResult());
             }
+        }
+
+        private void pictureBox_PercentileView_Click(object sender, EventArgs e)
+        {
+            DataSetRanking.PercentileView();
         }
     }
 }

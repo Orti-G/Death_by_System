@@ -38,7 +38,7 @@ namespace Death_by_System
             timer.Tick += (s, e2) =>
             {
                 timer.Stop();
-                MainPanel._mainpanel.panelCTN.Controls.Clear();              
+                MainPanel._mainpanel.panelCTN.Controls.Clear();
                 GamePlay gameplay = new GamePlay();
                 string stageName = "Whisperwood Forest";
                 gameplay.label_Settings.Text = stageName.ToUpper();
@@ -47,6 +47,7 @@ namespace Death_by_System
                 MainPanel._mainpanel.panelCTN.Controls.Add(gameplay);
 
                 gameplay.StartRevealSequence(gameSceneContent);
+
             };
 
             timer.Start();

@@ -25,7 +25,7 @@ namespace Death_by_System
             var lvl3Summary = DataStorage.stageResult.Dequeue();
 
             float averageSc = ((lvl1Summary.GetSurvivalChance() + lvl2Summary.GetSurvivalChance() + lvl3Summary.GetSurvivalChance()) / 3);
-            
+
 
             labelLvl1SC.Text = Convert.ToString(lvl1Summary.GetSurvivalChance()) + "%";
             labelLvl2SC.Text = Convert.ToString(lvl2Summary.GetSurvivalChance()) + "%";
@@ -47,7 +47,7 @@ namespace Death_by_System
 
         }
 
-        private void btn_Leaderboard_Click(object sender, EventArgs e)
+        private void btn_Leaderboard_Click(object sender, EventArgs e)  
         {
             MainPanel._mainpanel.panelCTN.Controls.Clear();
             MainPanel._mainpanel.panelCTN.Controls.Add(new LeaderBoard());

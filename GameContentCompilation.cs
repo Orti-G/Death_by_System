@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CsvHelper;
+using CsvHelper.Configuration;
+using System.Globalization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Xml.Linq;
+using System.Data;
+using System.Reflection;
 
 namespace Death_by_System
 {
@@ -74,8 +81,192 @@ namespace Death_by_System
             };
 
             return gameScenes[input];
-        }
-        
+        }  
     }
-    
+
+    public class DataSetRecord
+    {
+        public string CharacterClass { get; set; }
+        public double SurvivalChance { get; set; }
+    }
+
+    class DataSetRanking
+    {
+        public static string GetRanking(float score)
+        {
+
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSet", "CharacterStatsDataSet.csv");
+
+
+            using (var reader = new StreamReader(path))
+            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                HasHeaderRecord = true,
+            }))
+            {
+                DataStorage.survivalList = csv.GetRecords<DataSetRecord>().ToList();
+            }
+
+            QuickSort(DataStorage.survivalList, 0, DataStorage.survivalList.Count - 1);
+            return GetPercentile(FindPercentileIndex(DataStorage.survivalList, score));
+        }
+
+        public static void PercentileView()
+        {
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSet", "CharacterStatsDataSet.csv");
+
+
+            using (var reader = new StreamReader(path))
+            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                HasHeaderRecord = true,
+            }))
+            {
+                DataStorage.survivalList = csv.GetRecords<DataSetRecord>().ToList();
+            }
+
+            QuickSort(DataStorage.survivalList, 0, DataStorage.survivalList.Count - 1);
+            int total = DataStorage.survivalList.Count;
+            //int total = 100;
+
+            int top1PercentCount = (int)Math.Floor(total * 0.01);
+            int top5PercentCount = (int)Math.Floor(total * 0.05);
+            int top20PercentCount = (int)Math.Floor(total * 0.20);
+            int top50PercentCount = (int)Math.Floor(total * 0.50);
+
+
+            string text = "Top 1%\n";
+            string text1 = "Top 5%\n";
+            string text2 = "Top 20%\n";
+            string text3 = "Top 50%\n";
+
+            string text4 = "DataSet:\n";
+
+            for (int i = 0; i < top1PercentCount; i++)
+            {
+                text += $"{DataStorage.survivalList[i].CharacterClass}: {DataStorage.survivalList[i].SurvivalChance}" + "\n";
+            }
+
+
+
+            for (int i = 0; i < top5PercentCount; i++)
+            {
+                text1 += $"{DataStorage.survivalList[i].CharacterClass}: {DataStorage.survivalList[i].SurvivalChance}" + "\n";
+            }
+
+
+
+            for (int i = 0; i < top20PercentCount; i++)
+            {
+                text2 += $"{DataStorage.survivalList[i].CharacterClass}: {DataStorage.survivalList[i].SurvivalChance}" + "\n";
+            }
+
+            for (int i = 0; i < top50PercentCount; i++)
+            {
+                text3 += $"{DataStorage.survivalList[i].CharacterClass}: {DataStorage.survivalList[i].SurvivalChance}" + "\n";
+            }
+
+            for (int i = 0; i < DataStorage.survivalList.Count; i++)
+            {
+                text4 += $"{DataStorage.survivalList[i].CharacterClass}: {DataStorage.survivalList[i].SurvivalChance}" + "\n";
+            }
+
+            MessageBox.Show(text + "\n" + text1 + "\n" + text2 + "\n" + text3 + "\n\n" + text4);
+        }
+
+        private static string GetPercentile(int index)
+        {
+
+            double percentile = ((double)(index + 1) / DataStorage.survivalList.Count) * 100;
+
+            if (percentile <= 1)
+            {
+                return "Currently at Top 1% among all stats combination";
+            }
+            else if (percentile <= 5)
+            {
+                return "Currently at Top 5% among all stats combination";
+            }
+            else if (percentile <= 20)
+            {
+                return "Currently at Top 20% among all stats combination";
+            }
+            else if (percentile <= 50)
+            {
+                return "Currently at Top 50% among all stats combination";
+            }
+            else
+            {
+                return "";
+            }
+
+        }
+
+
+
+        private static int FindPercentileIndex(List<DataSetRecord> sortedList, float target) 
+        {
+
+            int left = 0;
+            int right = sortedList.Count - 1;
+
+            while (left <= right)
+            {
+                int mid = (left + right) / 2;
+                if (sortedList[mid].SurvivalChance == target)
+                {
+                    return mid;
+                }
+                else if (sortedList[mid].SurvivalChance < target)
+                {
+                    right = mid - 1;
+                }
+                else 
+                {
+                    left = mid + 1;
+                }
+                    
+            }
+
+            return Math.Abs(sortedList[left].SurvivalChance - target) < Math.Abs(sortedList[right].SurvivalChance - target) ? left : right;
+        }
+
+        public static void QuickSort(List<DataSetRecord> dataList, int low, int high)
+        {
+            if (low < high)
+            {
+                int pivotIndex = Partition(dataList, low, high);
+                QuickSort(dataList, low, pivotIndex - 1);
+                QuickSort(dataList, pivotIndex + 1, high);
+            }
+        }
+
+        private static int Partition(List<DataSetRecord> dataList, int low, int high)
+        {
+            var pivot = dataList[high].SurvivalChance;
+            int i = low - 1;
+
+            for (int j = low; j < high; j++)
+            {
+                if (dataList[j].SurvivalChance > pivot) // Descending order
+                {
+                    i++;
+                    Swap(dataList, i, j);
+                }
+            }
+
+            Swap(dataList, i + 1, high);
+            return i + 1;
+        }
+
+        private static void Swap(List<DataSetRecord> dataList, int a, int b)
+        {
+            var temp = dataList[a];
+            dataList[a] = dataList[b];
+            dataList[b] = temp;
+        }
+
+
+    }
+
 }

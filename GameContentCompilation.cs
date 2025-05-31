@@ -19,14 +19,21 @@ namespace Death_by_System
     public class GameContentCompilation
     {
         private string PlayerName;
-        private float AverageSC;
-        public GameContentCompilation(string playerName, float averageSC) 
+        private double AverageSC;
+        public GameContentCompilation(string playerName, double averageSC) 
         {
             PlayerName = playerName; 
             AverageSC = averageSC;
         }
 
-     
+        public string GetPlayerName() 
+        {
+            return PlayerName;
+        }
+        public double GetAverageSC()
+        {
+            return AverageSC;
+        }
     }
 
   
@@ -94,37 +101,23 @@ namespace Death_by_System
     {
         public static string GetRanking(float score)
         {
+            //var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSet", "CharacterStatsDataSet.csv");
 
-            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSet", "CharacterStatsDataSet.csv");
 
-
-            using (var reader = new StreamReader(path))
-            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                HasHeaderRecord = true,
-            }))
-            {
-                DataStorage.survivalList = csv.GetRecords<DataSetRecord>().ToList();
-            }
-
+            //using (var reader = new StreamReader(path))
+            //using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
+            //{
+            //    HasHeaderRecord = true,
+            //}))
+            //{
+            //    DataStorage.survivalList = csv.GetRecords<DataSetRecord>().ToList();
+            //}
             QuickSort(DataStorage.survivalList, 0, DataStorage.survivalList.Count - 1);
             return GetPercentile(FindPercentileIndex(DataStorage.survivalList, score));
         }
 
         public static void PercentileView()
         {
-            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSet", "CharacterStatsDataSet.csv");
-
-
-            using (var reader = new StreamReader(path))
-            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                HasHeaderRecord = true,
-            }))
-            {
-                DataStorage.survivalList = csv.GetRecords<DataSetRecord>().ToList();
-            }
-
             QuickSort(DataStorage.survivalList, 0, DataStorage.survivalList.Count - 1);
             int total = DataStorage.survivalList.Count;
             //int total = 100;

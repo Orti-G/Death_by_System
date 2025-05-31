@@ -97,6 +97,7 @@ namespace Death_by_System
 
         private void btnNext_Click(object sender, EventArgs e)
         {
+            DataStorage.survivalList.Clear();
             if (DataStorage.stageResult.Count != 3)
             {
                 MainPanel._mainpanel.panelCTN.Controls.Clear();

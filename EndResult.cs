@@ -24,7 +24,7 @@ namespace Death_by_System
             var lvl2Summary = DataStorage.stageResult.Dequeue();
             var lvl3Summary = DataStorage.stageResult.Dequeue();
 
-            float averageSc = ((lvl1Summary.GetSurvivalChance() + lvl2Summary.GetSurvivalChance() + lvl3Summary.GetSurvivalChance()) / 3);
+            double averageSc = ((lvl1Summary.GetSurvivalChance() + lvl2Summary.GetSurvivalChance() + lvl3Summary.GetSurvivalChance()) / 3);
 
 
             labelLvl1SC.Text = Convert.ToString(lvl1Summary.GetSurvivalChance()) + "%";
@@ -34,7 +34,7 @@ namespace Death_by_System
             labelPlayerName.Text = PlayerName;
             labelASC.Text = Convert.ToString(Math.Round(averageSc, 1));
 
-            DataStorage.gameHistory.Add(new GameContentCompilation(PlayerName, averageSc));
+            DataStorage.gameHistory.Add(new GameContentCompilation(PlayerName, Math.Round(averageSc,1)));
         }
 
         private void label8_Click(object sender, EventArgs e)

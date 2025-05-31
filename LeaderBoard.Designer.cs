@@ -34,39 +34,39 @@
             panel8 = new Panel();
             label27 = new Label();
             label28 = new Label();
-            label29 = new Label();
-            label30 = new Label();
+            lblRank6ASC = new Label();
+            lblRank6Name = new Label();
             label31 = new Label();
             panel7 = new Panel();
             label6 = new Label();
             label7 = new Label();
-            label24 = new Label();
-            label25 = new Label();
+            lblRank5ASC = new Label();
+            lblRank5Name = new Label();
             label26 = new Label();
             label_Home = new PictureBox();
             pictureBox2 = new PictureBox();
             panel6 = new Panel();
             label23 = new Label();
             label22 = new Label();
-            label21 = new Label();
-            label20 = new Label();
+            lblRank4ASC = new Label();
+            lblRank4Name = new Label();
             label9 = new Label();
             panel5 = new Panel();
             label18 = new Label();
-            label19 = new Label();
+            lblRank3ASC = new Label();
             label16 = new Label();
-            label17 = new Label();
+            lblRank3Name = new Label();
             label4 = new Label();
             panel4 = new Panel();
             label15 = new Label();
-            label14 = new Label();
+            lblRank2ASC = new Label();
             label13 = new Label();
-            label12 = new Label();
+            lblRank2Name = new Label();
             panel3 = new Panel();
             label5 = new Label();
-            label8 = new Label();
+            lblRank1ASC = new Label();
             label11 = new Label();
-            label10 = new Label();
+            lblRank1Name = new Label();
             pictureBox1 = new PictureBox();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
@@ -130,8 +130,8 @@
             panel8.BackColor = SystemColors.ActiveCaptionText;
             panel8.Controls.Add(label27);
             panel8.Controls.Add(label28);
-            panel8.Controls.Add(label29);
-            panel8.Controls.Add(label30);
+            panel8.Controls.Add(lblRank6ASC);
+            panel8.Controls.Add(lblRank6Name);
             panel8.Controls.Add(label31);
             panel8.Location = new Point(441, 436);
             panel8.Margin = new Padding(3, 2, 3, 2);
@@ -164,30 +164,30 @@
             label28.Text = "Average Survival Chace";
             label28.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label29
+            // lblRank6ASC
             // 
-            label29.Anchor = AnchorStyles.None;
-            label29.BackColor = Color.Transparent;
-            label29.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label29.ForeColor = Color.Transparent;
-            label29.Location = new Point(227, 1);
-            label29.Name = "label29";
-            label29.Size = new Size(130, 30);
-            label29.TabIndex = 35;
-            label29.Text = "60%";
+            lblRank6ASC.Anchor = AnchorStyles.None;
+            lblRank6ASC.BackColor = Color.Transparent;
+            lblRank6ASC.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank6ASC.ForeColor = Color.Transparent;
+            lblRank6ASC.Location = new Point(227, 1);
+            lblRank6ASC.Name = "lblRank6ASC";
+            lblRank6ASC.Size = new Size(130, 30);
+            lblRank6ASC.TabIndex = 35;
+            lblRank6ASC.Text = "60.5%";
             // 
-            // label30
+            // lblRank6Name
             // 
-            label30.Anchor = AnchorStyles.None;
-            label30.BackColor = Color.Transparent;
-            label30.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label30.ForeColor = Color.WhiteSmoke;
-            label30.Location = new Point(-19, 8);
-            label30.Name = "label30";
-            label30.Size = new Size(258, 41);
-            label30.TabIndex = 31;
-            label30.Text = "JAYJO BINAY";
-            label30.TextAlign = ContentAlignment.MiddleCenter;
+            lblRank6Name.Anchor = AnchorStyles.None;
+            lblRank6Name.BackColor = Color.Transparent;
+            lblRank6Name.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank6Name.ForeColor = Color.WhiteSmoke;
+            lblRank6Name.Location = new Point(-19, 8);
+            lblRank6Name.Name = "lblRank6Name";
+            lblRank6Name.Size = new Size(258, 41);
+            lblRank6Name.TabIndex = 31;
+            lblRank6Name.Text = "JAYJO BINAY";
+            lblRank6Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label31
             // 
@@ -206,8 +206,8 @@
             panel7.BackColor = SystemColors.ActiveCaptionText;
             panel7.Controls.Add(label6);
             panel7.Controls.Add(label7);
-            panel7.Controls.Add(label24);
-            panel7.Controls.Add(label25);
+            panel7.Controls.Add(lblRank5ASC);
+            panel7.Controls.Add(lblRank5Name);
             panel7.Controls.Add(label26);
             panel7.Location = new Point(374, 382);
             panel7.Margin = new Padding(3, 2, 3, 2);
@@ -240,30 +240,30 @@
             label7.Text = "Average Survival Chace";
             label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label24
+            // lblRank5ASC
             // 
-            label24.Anchor = AnchorStyles.None;
-            label24.BackColor = Color.Transparent;
-            label24.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.ForeColor = Color.Transparent;
-            label24.Location = new Point(228, 2);
-            label24.Name = "label24";
-            label24.Size = new Size(130, 30);
-            label24.TabIndex = 35;
-            label24.Text = "60%";
+            lblRank5ASC.Anchor = AnchorStyles.None;
+            lblRank5ASC.BackColor = Color.Transparent;
+            lblRank5ASC.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank5ASC.ForeColor = Color.Transparent;
+            lblRank5ASC.Location = new Point(228, 2);
+            lblRank5ASC.Name = "lblRank5ASC";
+            lblRank5ASC.Size = new Size(130, 30);
+            lblRank5ASC.TabIndex = 35;
+            lblRank5ASC.Text = "60.5%";
             // 
-            // label25
+            // lblRank5Name
             // 
-            label25.Anchor = AnchorStyles.None;
-            label25.BackColor = Color.Transparent;
-            label25.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label25.ForeColor = Color.WhiteSmoke;
-            label25.Location = new Point(-18, 8);
-            label25.Name = "label25";
-            label25.Size = new Size(258, 41);
-            label25.TabIndex = 31;
-            label25.Text = "JAYJO BINAY";
-            label25.TextAlign = ContentAlignment.MiddleCenter;
+            lblRank5Name.Anchor = AnchorStyles.None;
+            lblRank5Name.BackColor = Color.Transparent;
+            lblRank5Name.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank5Name.ForeColor = Color.WhiteSmoke;
+            lblRank5Name.Location = new Point(-18, 8);
+            lblRank5Name.Name = "lblRank5Name";
+            lblRank5Name.Size = new Size(258, 41);
+            lblRank5Name.TabIndex = 31;
+            lblRank5Name.Text = "JAYJO BINAY";
+            lblRank5Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label26
             // 
@@ -307,8 +307,8 @@
             panel6.BackColor = SystemColors.ActiveCaptionText;
             panel6.Controls.Add(label23);
             panel6.Controls.Add(label22);
-            panel6.Controls.Add(label21);
-            panel6.Controls.Add(label20);
+            panel6.Controls.Add(lblRank4ASC);
+            panel6.Controls.Add(lblRank4Name);
             panel6.Controls.Add(label9);
             panel6.Location = new Point(302, 322);
             panel6.Margin = new Padding(3, 2, 3, 2);
@@ -341,30 +341,30 @@
             label22.Text = "Average Survival Chace";
             label22.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // lblRank4ASC
             // 
-            label21.Anchor = AnchorStyles.None;
-            label21.BackColor = Color.Transparent;
-            label21.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label21.ForeColor = Color.Transparent;
-            label21.Location = new Point(241, 4);
-            label21.Name = "label21";
-            label21.Size = new Size(130, 30);
-            label21.TabIndex = 35;
-            label21.Text = "60%";
+            lblRank4ASC.Anchor = AnchorStyles.None;
+            lblRank4ASC.BackColor = Color.Transparent;
+            lblRank4ASC.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank4ASC.ForeColor = Color.Transparent;
+            lblRank4ASC.Location = new Point(243, 1);
+            lblRank4ASC.Name = "lblRank4ASC";
+            lblRank4ASC.Size = new Size(130, 30);
+            lblRank4ASC.TabIndex = 35;
+            lblRank4ASC.Text = "60.5%";
             // 
-            // label20
+            // lblRank4Name
             // 
-            label20.Anchor = AnchorStyles.None;
-            label20.BackColor = Color.Transparent;
-            label20.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label20.ForeColor = Color.WhiteSmoke;
-            label20.Location = new Point(-17, 8);
-            label20.Name = "label20";
-            label20.Size = new Size(258, 41);
-            label20.TabIndex = 31;
-            label20.Text = "JAYJO BINAY";
-            label20.TextAlign = ContentAlignment.MiddleCenter;
+            lblRank4Name.Anchor = AnchorStyles.None;
+            lblRank4Name.BackColor = Color.Transparent;
+            lblRank4Name.Font = new Font("Microsoft Sans Serif", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank4Name.ForeColor = Color.WhiteSmoke;
+            lblRank4Name.Location = new Point(-17, 8);
+            lblRank4Name.Name = "lblRank4Name";
+            lblRank4Name.Size = new Size(258, 41);
+            lblRank4Name.TabIndex = 31;
+            lblRank4Name.Text = "JAYJO BINAY";
+            lblRank4Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label9
             // 
@@ -384,9 +384,9 @@
             panel5.BackgroundImage = Properties.Resources.panel_ThirdPlace_new_;
             panel5.BackgroundImageLayout = ImageLayout.Stretch;
             panel5.Controls.Add(label18);
-            panel5.Controls.Add(label19);
+            panel5.Controls.Add(lblRank3ASC);
             panel5.Controls.Add(label16);
-            panel5.Controls.Add(label17);
+            panel5.Controls.Add(lblRank3Name);
             panel5.Controls.Add(label4);
             panel5.Location = new Point(530, 191);
             panel5.Margin = new Padding(3, 2, 3, 2);
@@ -407,17 +407,17 @@
             label18.Text = "Average Survival Chace";
             label18.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label19
+            // lblRank3ASC
             // 
-            label19.Anchor = AnchorStyles.None;
-            label19.BackColor = Color.Transparent;
-            label19.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label19.ForeColor = Color.Black;
-            label19.Location = new Point(296, 24);
-            label19.Name = "label19";
-            label19.Size = new Size(122, 42);
-            label19.TabIndex = 34;
-            label19.Text = "60%";
+            lblRank3ASC.Anchor = AnchorStyles.None;
+            lblRank3ASC.BackColor = Color.Transparent;
+            lblRank3ASC.Font = new Font("Microsoft Sans Serif", 26.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank3ASC.ForeColor = Color.Black;
+            lblRank3ASC.Location = new Point(299, 27);
+            lblRank3ASC.Name = "lblRank3ASC";
+            lblRank3ASC.Size = new Size(122, 42);
+            lblRank3ASC.TabIndex = 34;
+            lblRank3ASC.Text = "60.5%";
             // 
             // label16
             // 
@@ -431,18 +431,18 @@
             label16.Text = "PLAYER'S NAME";
             label16.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label17
+            // lblRank3Name
             // 
-            label17.Anchor = AnchorStyles.None;
-            label17.BackColor = Color.Transparent;
-            label17.Font = new Font("Microsoft Sans Serif", 22.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.SaddleBrown;
-            label17.Location = new Point(55, 44);
-            label17.Name = "label17";
-            label17.Size = new Size(232, 41);
-            label17.TabIndex = 32;
-            label17.Text = "JAYJO BINAY";
-            label17.TextAlign = ContentAlignment.MiddleCenter;
+            lblRank3Name.Anchor = AnchorStyles.None;
+            lblRank3Name.BackColor = Color.Transparent;
+            lblRank3Name.Font = new Font("Microsoft Sans Serif", 22.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank3Name.ForeColor = Color.SaddleBrown;
+            lblRank3Name.Location = new Point(55, 44);
+            lblRank3Name.Name = "lblRank3Name";
+            lblRank3Name.Size = new Size(232, 41);
+            lblRank3Name.TabIndex = 32;
+            lblRank3Name.Text = "JAYJO BINAY";
+            lblRank3Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -462,9 +462,9 @@
             panel4.BackgroundImage = Properties.Resources.panel_SeconPlace_new_;
             panel4.BackgroundImageLayout = ImageLayout.Stretch;
             panel4.Controls.Add(label15);
-            panel4.Controls.Add(label14);
+            panel4.Controls.Add(lblRank2ASC);
             panel4.Controls.Add(label13);
-            panel4.Controls.Add(label12);
+            panel4.Controls.Add(lblRank2Name);
             panel4.Location = new Point(66, 192);
             panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
@@ -484,17 +484,17 @@
             label15.Text = "Average Survival Chace";
             label15.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label14
+            // lblRank2ASC
             // 
-            label14.Anchor = AnchorStyles.None;
-            label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.Black;
-            label14.Location = new Point(293, 23);
-            label14.Name = "label14";
-            label14.Size = new Size(122, 42);
-            label14.TabIndex = 30;
-            label14.Text = "60%";
+            lblRank2ASC.Anchor = AnchorStyles.None;
+            lblRank2ASC.BackColor = Color.Transparent;
+            lblRank2ASC.Font = new Font("Microsoft Sans Serif", 27F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank2ASC.ForeColor = Color.Black;
+            lblRank2ASC.Location = new Point(293, 27);
+            lblRank2ASC.Name = "lblRank2ASC";
+            lblRank2ASC.Size = new Size(122, 42);
+            lblRank2ASC.TabIndex = 30;
+            lblRank2ASC.Text = "60.5%";
             // 
             // label13
             // 
@@ -508,18 +508,18 @@
             label13.Text = "PLAYER'S NAME";
             label13.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // lblRank2Name
             // 
-            label12.Anchor = AnchorStyles.None;
-            label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Microsoft Sans Serif", 22.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.DimGray;
-            label12.Location = new Point(49, 43);
-            label12.Name = "label12";
-            label12.Size = new Size(258, 41);
-            label12.TabIndex = 30;
-            label12.Text = "JAYJO BINAY";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
+            lblRank2Name.Anchor = AnchorStyles.None;
+            lblRank2Name.BackColor = Color.Transparent;
+            lblRank2Name.Font = new Font("Microsoft Sans Serif", 22.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank2Name.ForeColor = Color.DimGray;
+            lblRank2Name.Location = new Point(49, 43);
+            lblRank2Name.Name = "lblRank2Name";
+            lblRank2Name.Size = new Size(258, 41);
+            lblRank2Name.TabIndex = 30;
+            lblRank2Name.Text = "JAYJO BINAY";
+            lblRank2Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
@@ -527,9 +527,9 @@
             panel3.BackgroundImage = Properties.Resources.panel_firstplace_new_;
             panel3.BackgroundImageLayout = ImageLayout.Stretch;
             panel3.Controls.Add(label5);
-            panel3.Controls.Add(label8);
+            panel3.Controls.Add(lblRank1ASC);
             panel3.Controls.Add(label11);
-            panel3.Controls.Add(label10);
+            panel3.Controls.Add(lblRank1Name);
             panel3.Location = new Point(89, 60);
             panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
@@ -549,17 +549,17 @@
             label5.Text = "Average Survival Chace";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lblRank1ASC
             // 
-            label8.Anchor = AnchorStyles.None;
-            label8.BackColor = Color.Transparent;
-            label8.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(552, 20);
-            label8.Name = "label8";
-            label8.Size = new Size(169, 93);
-            label8.TabIndex = 28;
-            label8.Text = "60%";
+            lblRank1ASC.Anchor = AnchorStyles.None;
+            lblRank1ASC.BackColor = Color.Transparent;
+            lblRank1ASC.Font = new Font("Microsoft Sans Serif", 38.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank1ASC.ForeColor = Color.Black;
+            lblRank1ASC.Location = new Point(552, 20);
+            lblRank1ASC.Name = "lblRank1ASC";
+            lblRank1ASC.Size = new Size(169, 93);
+            lblRank1ASC.TabIndex = 28;
+            lblRank1ASC.Text = "60.5%";
             // 
             // label11
             // 
@@ -573,18 +573,18 @@
             label11.Text = "PLAYER'S NAME";
             label11.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // lblRank1Name
             // 
-            label10.Anchor = AnchorStyles.None;
-            label10.BackColor = Color.Transparent;
-            label10.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.ForeColor = Color.Goldenrod;
-            label10.Location = new Point(126, 50);
-            label10.Name = "label10";
-            label10.Size = new Size(383, 41);
-            label10.TabIndex = 25;
-            label10.Text = "JAYJO BINAY";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            lblRank1Name.Anchor = AnchorStyles.None;
+            lblRank1Name.BackColor = Color.Transparent;
+            lblRank1Name.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRank1Name.ForeColor = Color.Goldenrod;
+            lblRank1Name.Location = new Point(126, 50);
+            lblRank1Name.Name = "lblRank1Name";
+            lblRank1Name.Size = new Size(383, 41);
+            lblRank1Name.TabIndex = 25;
+            lblRank1Name.Text = "JAYJO BINAY";
+            lblRank1Name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -606,6 +606,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "LeaderBoard";
             Size = new Size(1050, 507);
+            Load += LeaderBoard_Load;
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel8.ResumeLayout(false);
@@ -635,32 +636,32 @@
         private PictureBox label_Home;
         private PictureBox pictureBox2;
         private Label label11;
-        private Label label10;
-        private Label label8;
+        private Label lblRank1Name;
+        private Label lblRank1ASC;
         private Label label5;
         private Label label16;
-        private Label label17;
+        private Label lblRank3Name;
         private Label label15;
-        private Label label14;
+        private Label lblRank2ASC;
         private Label label13;
-        private Label label12;
+        private Label lblRank2Name;
         private Panel panel7;
         private Label label6;
         private Label label7;
-        private Label label24;
-        private Label label25;
+        private Label lblRank5ASC;
+        private Label lblRank5Name;
         private Label label26;
         private Label label23;
         private Label label22;
-        private Label label21;
-        private Label label20;
+        private Label lblRank4ASC;
+        private Label lblRank4Name;
         private Label label18;
-        private Label label19;
+        private Label lblRank3ASC;
         private Panel panel8;
         private Label label27;
         private Label label28;
-        private Label label29;
-        private Label label30;
+        private Label lblRank6ASC;
+        private Label lblRank6Name;
         private Label label31;
     }
 }

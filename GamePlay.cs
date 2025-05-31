@@ -11,6 +11,11 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json.Serialization;
 using Newtonsoft.Json;
+using CsvHelper.Configuration;
+using CsvHelper;
+using System.Globalization;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 
@@ -38,6 +43,18 @@ namespace Death_by_System
 
         private void GamePlay_Load(object sender, EventArgs e)
         {
+            var path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DataSet", "CharacterStatsDataSet.csv");
+
+
+            using (var reader = new StreamReader(path))
+            using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                HasHeaderRecord = true,
+            }))
+            {
+                DataStorage.survivalList = csv.GetRecords<DataSetRecord>().ToList();
+            }
+            ApplyDebuffStorage();
             lblPoints.Text = PlayerPoints.ToString();
         }
 
@@ -85,11 +102,50 @@ namespace Death_by_System
             var prediction = JsonConvert.DeserializeObject<PredictionResult>(result);
             predictedClass = prediction.PredictedClass;
             predictedSurvivalChance = prediction.SurvivalChance;
+            ApplyDebuff();
             DataStorage.stageResult.Enqueue(new StageResult(predictedClass,predictedSurvivalChance));  
             
             return prediction;
         }
-
+        private void ApplyDebuff() 
+        {
+            if (label_Settings.Text == "WHISPERWOOD FOREST")
+            {
+ 
+                if (predictedClass == "Mage")
+                {
+                    predictedSurvivalChance -= 30;
+                }
+                else if (predictedClass == "Assassin")
+                {
+                    predictedSurvivalChance -= 35;
+                }
+             
+            }
+            else if (label_Settings.Text == "CURSED ASHLAND")
+            {
+                
+                if (predictedClass == "Fighter")
+                {
+                    predictedSurvivalChance -= 25;
+                }
+                else if (predictedClass == "Assassin")
+                {
+                    predictedSurvivalChance -= 20;
+                }
+            }
+            else
+            {   
+                if (predictedClass == "Fighter")
+                {
+                    predictedSurvivalChance -= 30;
+                }
+                else if (predictedClass == "Mage")
+                {
+                    predictedSurvivalChance -= 20;
+                }               
+            }
+        }
         public async void StartRevealSequence(string scenario)
         {
             // Step 1: Hide all elements initially
@@ -135,7 +191,51 @@ namespace Death_by_System
         {
 
         }
-
+        private void ApplyDebuffStorage()
+        {
+            if (label_Settings.Text == "WHISPERWOOD FOREST")
+            {
+                foreach (var data in DataStorage.survivalList)
+                {
+                    if (data.CharacterClass == "Mage")
+                    {
+                        data.SurvivalChance -= 30;
+                    }
+                    else if (data.CharacterClass == "Assassin")
+                    {
+                        data.SurvivalChance -= 35;
+                    }
+                }
+            }
+            else if (label_Settings.Text == "CURSED ASHLAND")
+            {
+                foreach (var data in DataStorage.survivalList)
+                {
+                    if (data.CharacterClass == "Fighter")
+                    {
+                        data.SurvivalChance -= 25;
+                    }
+                    else if (data.CharacterClass == "Assassin")
+                    {
+                        data.SurvivalChance -= 20;
+                    }
+                }
+            }
+            else 
+            {
+                foreach (var data in DataStorage.survivalList)
+                {
+                    if (data.CharacterClass == "Fighter")
+                    {
+                        data.SurvivalChance -= 30;
+                    }
+                    else if (data.CharacterClass == "Mage")
+                    {
+                        data.SurvivalChance -= 20;
+                    }
+                }
+            }
+        }
         private void txtBoxPower_Leave(object sender, EventArgs e)
         {
             try

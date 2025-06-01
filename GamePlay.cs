@@ -179,7 +179,7 @@ namespace Death_by_System
             foreach (char c in scenarioText)
             {
                 label_textScenario.Text += c;
-                //await Task.Delay(10); // Adjust typing speed here (10 ms per char)
+                await Task.Delay(10); // Adjust typing speed here (10 ms per char)
             }
 
             // Step 6: Once typing is complete, reveal StatsPanel

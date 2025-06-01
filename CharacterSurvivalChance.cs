@@ -60,20 +60,30 @@ namespace Death_by_System
         {
             if (GamePlay.predictedClass == "Fighter")
             {
-                pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource
+                pictureBox_Character.Image = Properties.Resources.fighter; // Replace with your actual resource
                 label_Class.Text = "FIGHTER";
             }
             else if (GamePlay.predictedClass == "Mage")
             {
-                pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource
+                pictureBox_Character.Image = Properties.Resources.mage; // Replace with your actual resource
                 label_Class.Text = "MAGE";
             }
             else if (GamePlay.predictedClass == "Assassin")
             {
-                pictureBox_Character.Image = Properties.Resources.SampleCharacter; // Replace with your actual resource
+                pictureBox_Character.Image = Properties.Resources.assasin; // Replace with your actual resource
                 label_Class.Text = "ASSASSIN";
             }
-            else
+            else if (GamePlay.predictedClass == "Untrained")
+            {
+                pictureBox_Character.Image = Properties.Resources.untrained; // Replace with your actual resource
+                label_Class.Text = "UNTRAINED";
+            }
+            else if (GamePlay.predictedClass == "One Trick")
+            {
+                pictureBox_Character.Image = Properties.Resources.onetrick; // Replace with your actual resource
+                label_Class.Text = "ONE TRICK";
+            }
+            else 
             {
                 label_Class.Text = "ERROR";
             }

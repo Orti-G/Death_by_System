@@ -93,6 +93,16 @@ namespace Death_by_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap assasin {
+            get {
+                object obj = ResourceManager.GetObject("assasin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG_level1 {
             get {
                 object obj = ResourceManager.GetObject("BG_level1", resourceCulture);
@@ -116,6 +126,16 @@ namespace Death_by_System.Properties {
         internal static System.Drawing.Bitmap BG_level3 {
             get {
                 object obj = ResourceManager.GetObject("BG_level3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fighter {
+            get {
+                object obj = ResourceManager.GetObject("fighter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -343,9 +363,29 @@ namespace Death_by_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mage {
+            get {
+                object obj = ResourceManager.GetObject("mage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Main_Logo {
             get {
                 object obj = ResourceManager.GetObject("Main Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap onetrick {
+            get {
+                object obj = ResourceManager.GetObject("onetrick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +546,16 @@ namespace Death_by_System.Properties {
         internal static System.Drawing.Bitmap TitlePage {
             get {
                 object obj = ResourceManager.GetObject("TitlePage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap untrained {
+            get {
+                object obj = ResourceManager.GetObject("untrained", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

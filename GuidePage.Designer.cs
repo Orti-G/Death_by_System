@@ -37,44 +37,47 @@
             panel3 = new Panel();
             label11 = new Label();
             pictureBox2 = new PictureBox();
+            pictureBox_Guide = new PictureBox();
+            btnLeft = new PictureBox();
+            btnRight = new PictureBox();
             pictureBox1 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Guide).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnLeft).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnRight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // textBoxName
             // 
             textBoxName.BorderStyle = BorderStyle.FixedSingle;
             textBoxName.Font = new Font("Upheaval TT (BRK)", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxName.Location = new Point(286, 533);
+            textBoxName.Location = new Point(34, 14);
             textBoxName.Margin = new Padding(3, 4, 3, 4);
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(648, 32);
             textBoxName.TabIndex = 1;
-            textBoxName.Text = "Enter Your Player Name Here";
+            textBoxName.Text = "PLAYER NAME";
             textBoxName.TextAlign = HorizontalAlignment.Center;
             textBoxName.MouseClick += textBoxName_MouseClick;
             // 
             // panel1
             // 
             panel1.BackgroundImage = Properties.Resources.GIF_MainBackGround;
-            panel1.Controls.Add(textBoxName);
             panel1.Controls.Add(label_Startbtn);
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(label11);
             panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(pictureBox_Guide);
+            panel1.Controls.Add(btnLeft);
+            panel1.Controls.Add(btnRight);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox5);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1200, 676);
@@ -86,7 +89,7 @@
             label_Startbtn.BackColor = Color.White;
             label_Startbtn.Font = new Font("Press Start 2P", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_Startbtn.ForeColor = SystemColors.MenuHighlight;
-            label_Startbtn.Location = new Point(1019, 604);
+            label_Startbtn.Location = new Point(1019, 598);
             label_Startbtn.Name = "label_Startbtn";
             label_Startbtn.Size = new Size(135, 20);
             label_Startbtn.TabIndex = 7;
@@ -109,7 +112,7 @@
             // 
             panel2.BackColor = SystemColors.ActiveCaptionText;
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(459, 31);
+            panel2.Location = new Point(473, 36);
             panel2.Name = "panel2";
             panel2.Size = new Size(281, 46);
             panel2.TabIndex = 10;
@@ -130,7 +133,8 @@
             // panel3
             // 
             panel3.BackColor = SystemColors.ActiveCaptionText;
-            panel3.Location = new Point(244, 515);
+            panel3.Controls.Add(textBoxName);
+            panel3.Location = new Point(255, 524);
             panel3.Name = "panel3";
             panel3.Size = new Size(720, 67);
             panel3.TabIndex = 11;
@@ -140,7 +144,7 @@
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Squada One", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.DimGray;
-            label11.Location = new Point(366, 490);
+            label11.Location = new Point(363, 493);
             label11.Name = "label11";
             label11.Size = new Size(487, 41);
             label11.TabIndex = 25;
@@ -150,44 +154,61 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = Properties.Resources.GIF_RobotGuide;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(19, 354);
+            pictureBox2.Image = Properties.Resources.GIF_RobotGuide;
+            pictureBox2.Location = new Point(35, 469);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(261, 264);
+            pictureBox2.Size = new Size(204, 192);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 12;
             pictureBox2.TabStop = false;
             // 
+            // pictureBox_Guide
+            // 
+            pictureBox_Guide.BackgroundImage = Properties.Resources.GIF_MainBackGround1;
+            pictureBox_Guide.Image = Properties.Resources.Guide1;
+            pictureBox_Guide.Location = new Point(161, 75);
+            pictureBox_Guide.Name = "pictureBox_Guide";
+            pictureBox_Guide.Size = new Size(905, 456);
+            pictureBox_Guide.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox_Guide.TabIndex = 9;
+            pictureBox_Guide.TabStop = false;
+            // 
+            // btnLeft
+            // 
+            btnLeft.BackColor = Color.Transparent;
+            btnLeft.BackgroundImage = Properties.Resources.LeftArrow;
+            btnLeft.BackgroundImageLayout = ImageLayout.Stretch;
+            btnLeft.Location = new Point(83, 253);
+            btnLeft.Name = "btnLeft";
+            btnLeft.Size = new Size(100, 88);
+            btnLeft.TabIndex = 13;
+            btnLeft.TabStop = false;
+            btnLeft.Click += btnLeft_Click;
+            // 
+            // btnRight
+            // 
+            btnRight.BackColor = Color.Transparent;
+            btnRight.BackgroundImage = Properties.Resources.RightButton_new_;
+            btnRight.BackgroundImageLayout = ImageLayout.Stretch;
+            btnRight.Location = new Point(1038, 253);
+            btnRight.Name = "btnRight";
+            btnRight.Size = new Size(100, 88);
+            btnRight.TabIndex = 14;
+            btnRight.TabStop = false;
+            btnRight.Click += btnRight_Click;
+            // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.GIF_MainBackGround1;
-            pictureBox1.Location = new Point(165, 104);
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.GIF_MainBackGround1;
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(867, 368);
-            pictureBox1.TabIndex = 9;
+            pictureBox1.Size = new Size(1200, 676);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 26;
             pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = Color.Transparent;
-            pictureBox4.BackgroundImage = Properties.Resources.LeftArrow;
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(82, 233);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(100, 88);
-            pictureBox4.TabIndex = 13;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.Transparent;
-            pictureBox5.BackgroundImage = Properties.Resources.RightButton_new_;
-            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(1008, 254);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(100, 88);
-            pictureBox5.TabIndex = 14;
-            pictureBox5.TabStop = false;
             // 
             // GuidePage
             // 
@@ -201,10 +222,13 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_Guide).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnLeft).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnRight).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -214,12 +238,13 @@
         private PictureBox pictureBox3;
         private Label label_Startbtn;
         private Label label1;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox_Guide;
         private Panel panel2;
-        private PictureBox pictureBox4;
+        private PictureBox btnLeft;
         private PictureBox pictureBox2;
         private Panel panel3;
-        private PictureBox pictureBox5;
+        private PictureBox btnRight;
         private Label label11;
+        private PictureBox pictureBox1;
     }
 }

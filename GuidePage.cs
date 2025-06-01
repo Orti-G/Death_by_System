@@ -14,10 +14,24 @@ namespace Death_by_System
 {
     public partial class GuidePage : UserControl
     {
+        private int currentGuideIndex = 0;
+        private Image[] guideImages;
 
         public GuidePage()
         {
             InitializeComponent();
+            pictureBox_Guide.Image = Properties.Resources.Guide1;
+            guideImages = new Image[]
+            {
+                Properties.Resources.Guide1,
+                Properties.Resources.Guide2,
+                Properties.Resources.Guide3,
+                Properties.Resources.Guide4,
+                Properties.Resources.Guide5,
+                Properties.Resources.Guide6
+            };
+
+            pictureBox_Guide.Image = guideImages[currentGuideIndex];
         }
 
         private void textBoxName_MouseClick(object sender, MouseEventArgs e)
@@ -56,6 +70,26 @@ namespace Death_by_System
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            currentGuideIndex++;
+
+            if (currentGuideIndex >= guideImages.Length)
+                currentGuideIndex = 0; // wrap back to first
+
+            pictureBox_Guide.Image = guideImages[currentGuideIndex];
+        }
+
+        private void btnLeft_Click(object sender, EventArgs e)
+        {
+            currentGuideIndex--;
+
+            if (currentGuideIndex < 0)
+                currentGuideIndex = guideImages.Length - 1; // wrap to last
+
+            pictureBox_Guide.Image = guideImages[currentGuideIndex];
         }
     }
 }

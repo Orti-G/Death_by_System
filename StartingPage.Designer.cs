@@ -38,6 +38,7 @@
             pictureBox7 = new PictureBox();
             panel2 = new Panel();
             pictureBox2 = new PictureBox();
+            pictureBox5 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -47,6 +48,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -65,7 +67,7 @@
             // 
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = Properties.Resources.pictureButton;
-            pictureBox3.Location = new Point(780, 439);
+            pictureBox3.Location = new Point(801, 425);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(160, 139);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -77,7 +79,7 @@
             // 
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.Image = Properties.Resources.pictureButton;
-            pictureBox4.Location = new Point(274, 439);
+            pictureBox4.Location = new Point(295, 425);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(166, 139);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -90,7 +92,7 @@
             label_Startbtn.BackColor = Color.White;
             label_Startbtn.Font = new Font("Press Start 2P", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_Startbtn.ForeColor = SystemColors.MenuHighlight;
-            label_Startbtn.Location = new Point(49, 55);
+            label_Startbtn.Location = new Point(44, 55);
             label_Startbtn.Name = "label_Startbtn";
             label_Startbtn.Size = new Size(207, 37);
             label_Startbtn.TabIndex = 6;
@@ -101,7 +103,7 @@
             // 
             label_Aboutus.BackColor = Color.White;
             label_Aboutus.Image = Properties.Resources.Icon_AbotUs;
-            label_Aboutus.Location = new Point(312, 476);
+            label_Aboutus.Location = new Point(333, 462);
             label_Aboutus.Name = "label_Aboutus";
             label_Aboutus.Size = new Size(90, 65);
             label_Aboutus.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -113,7 +115,7 @@
             // 
             label_Leaderboard.BackColor = Color.White;
             label_Leaderboard.Image = Properties.Resources.Icon_LeaderBoard;
-            label_Leaderboard.Location = new Point(815, 476);
+            label_Leaderboard.Location = new Point(836, 462);
             label_Leaderboard.Name = "label_Leaderboard";
             label_Leaderboard.Size = new Size(90, 65);
             label_Leaderboard.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -133,6 +135,7 @@
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(pictureBox5);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1200, 676);
@@ -141,11 +144,12 @@
             // pictureBox7
             // 
             pictureBox7.BackColor = Color.Transparent;
-            pictureBox7.BackgroundImage = Properties.Resources.GIF_Satellite;
             pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(59, 29);
+            pictureBox7.Image = Properties.Resources.GIF_Satellite;
+            pictureBox7.Location = new Point(994, 104);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(175, 178);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 14;
             pictureBox7.TabStop = false;
             // 
@@ -155,7 +159,7 @@
             panel2.BackgroundImage = Properties.Resources.pictureButton;
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
             panel2.Controls.Add(label_Startbtn);
-            panel2.Location = new Point(462, 435);
+            panel2.Location = new Point(483, 421);
             panel2.Name = "panel2";
             panel2.Size = new Size(288, 143);
             panel2.TabIndex = 9;
@@ -164,12 +168,23 @@
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = Properties.Resources.GIF_robotWave;
-            pictureBox2.Location = new Point(907, 277);
+            pictureBox2.Location = new Point(32, 276);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(283, 251);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Dock = DockStyle.Fill;
+            pictureBox5.Image = Properties.Resources.GIF_MainBackGround;
+            pictureBox5.Location = new Point(0, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(1200, 676);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 15;
+            pictureBox5.TabStop = false;
             // 
             // StartingPage
             // 
@@ -190,6 +205,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -204,5 +220,6 @@
         private Panel panel2;
         private PictureBox pictureBox7;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox5;
     }
 }

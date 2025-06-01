@@ -63,6 +63,36 @@ namespace Death_by_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AboutUs {
+            get {
+                object obj = ResourceManager.GetObject("AboutUs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AboutUs__new_ {
+            get {
+                object obj = ResourceManager.GetObject("AboutUs (new)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AboutUs__new2_ {
+            get {
+                object obj = ResourceManager.GetObject("AboutUs (new2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG_level1 {
             get {
                 object obj = ResourceManager.GetObject("BG_level1", resourceCulture);
@@ -213,6 +243,66 @@ namespace Death_by_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Guide1 {
+            get {
+                object obj = ResourceManager.GetObject("Guide1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guide2 {
+            get {
+                object obj = ResourceManager.GetObject("Guide2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guide3 {
+            get {
+                object obj = ResourceManager.GetObject("Guide3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guide4 {
+            get {
+                object obj = ResourceManager.GetObject("Guide4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guide5 {
+            get {
+                object obj = ResourceManager.GetObject("Guide5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guide6 {
+            get {
+                object obj = ResourceManager.GetObject("Guide6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Icon_AbotUs {
             get {
                 object obj = ResourceManager.GetObject("Icon_AbotUs", resourceCulture);
@@ -336,6 +426,16 @@ namespace Death_by_System.Properties {
         internal static System.Drawing.Bitmap pictureButton {
             get {
                 object obj = ResourceManager.GetObject("pictureButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap questionMark {
+            get {
+                object obj = ResourceManager.GetObject("questionMark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

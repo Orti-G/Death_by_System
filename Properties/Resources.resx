@@ -121,6 +121,9 @@
   <data name="GIF_Satellite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_Satellite.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Guide1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guide1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ScenarioPanel_lvl2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ScenarioPanel_lvl2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,20 +142,23 @@
   <data name="ScenarioPanel_lvl3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ScenarioPanel_lvl3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SampleCharacter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SampleCharacter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pictureButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pictureButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guide3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guide3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG_level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG_level1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AboutUs (new2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AboutUs (new2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="panel_firstplace(new)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_firstplace(new).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_AbotUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon_AbotUs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="panel_SeconPlace(new)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_SeconPlace(new).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="panel_1stPlace" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_1stPlace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,14 +172,23 @@
   <data name="GIF_MainBackGround1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_MainBackGround1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GIF_Loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_Loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Panel_StatAdjusment(new2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel_StatAdjusment(new2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="panel_SeconPlace(new)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\panel_SeconPlace(new).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Guide4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guide4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_CalculatingClass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_CalculatingClass.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AboutUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AboutUs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BG_level3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BG_level3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_Transition_level1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_Transition_level1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,20 +199,23 @@
   <data name="ScenarioPanel_lvl1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ScenarioPanel_lvl1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BG_level3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BG_level3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GIF_RobotGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_RobotGuide.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GIF_MainBackGround" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_MainBackGround.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_Transition_level2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_Transition_level2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SampleCharacter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SampleCharacter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Panel_StatAdjustments(new)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel_StatAdjustments(new).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GIF_Transition_level2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GIF_Transition_level2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Main Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Main Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,19 +226,31 @@
   <data name="RightArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RightArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Guide6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guide6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guide5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guide5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GIF_RobotLeadeboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_RobotLeadeboard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_RobotGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_RobotGuide.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_AbotUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon_AbotUs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AboutUs (new)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AboutUs (new).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TitlePage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TitlePage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Guide2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Guide2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GIF_robotWave" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GIF_robotWave.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GIF_Loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GIF_Loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="questionMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\questionMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

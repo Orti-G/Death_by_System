@@ -130,11 +130,11 @@
             lblPoints.Anchor = AnchorStyles.None;
             lblPoints.AutoSize = true;
             lblPoints.BackColor = Color.Transparent;
-            lblPoints.Font = new Font("Squada One", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPoints.Font = new Font("VP Pixel Simplified DEMO", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPoints.ForeColor = SystemColors.ButtonHighlight;
-            lblPoints.Location = new Point(987, 37);
+            lblPoints.Location = new Point(987, 30);
             lblPoints.Name = "lblPoints";
-            lblPoints.Size = new Size(38, 25);
+            lblPoints.Size = new Size(44, 33);
             lblPoints.TabIndex = 33;
             lblPoints.Text = "100";
             lblPoints.TextAlign = ContentAlignment.MiddleRight;
@@ -155,12 +155,12 @@
             // txtBoxIntuition
             // 
             txtBoxIntuition.Anchor = AnchorStyles.None;
-            txtBoxIntuition.Font = new Font("Squada One", 16.2F);
-            txtBoxIntuition.Location = new Point(802, 192);
+            txtBoxIntuition.Font = new Font("VP Pixel Simplified DEMO", 16.1999989F, FontStyle.Bold);
+            txtBoxIntuition.Location = new Point(803, 183);
             txtBoxIntuition.Margin = new Padding(3, 4, 3, 4);
             txtBoxIntuition.MaxLength = 2;
             txtBoxIntuition.Name = "txtBoxIntuition";
-            txtBoxIntuition.Size = new Size(47, 36);
+            txtBoxIntuition.Size = new Size(47, 47);
             txtBoxIntuition.TabIndex = 31;
             txtBoxIntuition.Text = "0";
             txtBoxIntuition.TextAlign = HorizontalAlignment.Center;
@@ -169,12 +169,12 @@
             // txtBoxEnergy
             // 
             txtBoxEnergy.Anchor = AnchorStyles.None;
-            txtBoxEnergy.Font = new Font("Squada One", 16.2F);
-            txtBoxEnergy.Location = new Point(802, 140);
+            txtBoxEnergy.Font = new Font("VP Pixel Simplified DEMO", 16.1999989F, FontStyle.Bold);
+            txtBoxEnergy.Location = new Point(803, 131);
             txtBoxEnergy.Margin = new Padding(3, 4, 3, 4);
             txtBoxEnergy.MaxLength = 2;
             txtBoxEnergy.Name = "txtBoxEnergy";
-            txtBoxEnergy.Size = new Size(47, 36);
+            txtBoxEnergy.Size = new Size(47, 47);
             txtBoxEnergy.TabIndex = 30;
             txtBoxEnergy.Text = "0";
             txtBoxEnergy.TextAlign = HorizontalAlignment.Center;
@@ -183,12 +183,12 @@
             // txtBoxResilience
             // 
             txtBoxResilience.Anchor = AnchorStyles.None;
-            txtBoxResilience.Font = new Font("Squada One", 16.2F);
-            txtBoxResilience.Location = new Point(802, 88);
+            txtBoxResilience.Font = new Font("VP Pixel Simplified DEMO", 16.1999989F, FontStyle.Bold);
+            txtBoxResilience.Location = new Point(803, 79);
             txtBoxResilience.Margin = new Padding(3, 4, 3, 4);
             txtBoxResilience.MaxLength = 2;
             txtBoxResilience.Name = "txtBoxResilience";
-            txtBoxResilience.Size = new Size(47, 36);
+            txtBoxResilience.Size = new Size(47, 47);
             txtBoxResilience.TabIndex = 29;
             txtBoxResilience.Text = "0";
             txtBoxResilience.TextAlign = HorizontalAlignment.Center;
@@ -197,12 +197,12 @@
             // txtBoxFocus
             // 
             txtBoxFocus.Anchor = AnchorStyles.None;
-            txtBoxFocus.Font = new Font("Squada One", 16.2F);
-            txtBoxFocus.Location = new Point(386, 140);
+            txtBoxFocus.Font = new Font("VP Pixel Simplified DEMO", 16.1999989F, FontStyle.Bold);
+            txtBoxFocus.Location = new Point(387, 131);
             txtBoxFocus.Margin = new Padding(3, 4, 3, 4);
             txtBoxFocus.MaxLength = 2;
             txtBoxFocus.Name = "txtBoxFocus";
-            txtBoxFocus.Size = new Size(57, 36);
+            txtBoxFocus.Size = new Size(57, 47);
             txtBoxFocus.TabIndex = 28;
             txtBoxFocus.Text = "0";
             txtBoxFocus.TextAlign = HorizontalAlignment.Center;
@@ -211,12 +211,12 @@
             // txtBoxAgility
             // 
             txtBoxAgility.Anchor = AnchorStyles.None;
-            txtBoxAgility.Font = new Font("Squada One", 16.2F);
-            txtBoxAgility.Location = new Point(386, 189);
+            txtBoxAgility.Font = new Font("VP Pixel Simplified DEMO", 16.1999989F, FontStyle.Bold);
+            txtBoxAgility.Location = new Point(387, 180);
             txtBoxAgility.Margin = new Padding(3, 4, 3, 4);
             txtBoxAgility.MaxLength = 2;
             txtBoxAgility.Name = "txtBoxAgility";
-            txtBoxAgility.Size = new Size(57, 36);
+            txtBoxAgility.Size = new Size(57, 47);
             txtBoxAgility.TabIndex = 27;
             txtBoxAgility.Text = "0";
             txtBoxAgility.TextAlign = HorizontalAlignment.Center;
@@ -238,12 +238,12 @@
             // txtBoxPower
             // 
             txtBoxPower.Anchor = AnchorStyles.None;
-            txtBoxPower.Font = new Font("Squada One", 16.2F);
-            txtBoxPower.Location = new Point(386, 91);
+            txtBoxPower.Font = new Font("VP Pixel Simplified DEMO", 16.1999989F, FontStyle.Bold);
+            txtBoxPower.Location = new Point(387, 82);
             txtBoxPower.Margin = new Padding(3, 4, 3, 4);
             txtBoxPower.MaxLength = 2;
             txtBoxPower.Name = "txtBoxPower";
-            txtBoxPower.Size = new Size(57, 36);
+            txtBoxPower.Size = new Size(57, 47);
             txtBoxPower.TabIndex = 25;
             txtBoxPower.Text = "0";
             txtBoxPower.TextAlign = HorizontalAlignment.Center;
@@ -266,7 +266,7 @@
             // 
             btnMinusIntuition.Anchor = AnchorStyles.None;
             btnMinusIntuition.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnMinusIntuition.Location = new Point(773, 195);
+            btnMinusIntuition.Location = new Point(773, 194);
             btnMinusIntuition.Margin = new Padding(0);
             btnMinusIntuition.Name = "btnMinusIntuition";
             btnMinusIntuition.RightToLeft = RightToLeft.No;
@@ -280,7 +280,7 @@
             // 
             btnAddIntuition.Anchor = AnchorStyles.None;
             btnAddIntuition.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnAddIntuition.Location = new Point(856, 195);
+            btnAddIntuition.Location = new Point(856, 194);
             btnAddIntuition.Margin = new Padding(0);
             btnAddIntuition.Name = "btnAddIntuition";
             btnAddIntuition.RightToLeft = RightToLeft.No;
@@ -308,7 +308,7 @@
             // 
             btnMinusEnergy.Anchor = AnchorStyles.None;
             btnMinusEnergy.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnMinusEnergy.Location = new Point(773, 141);
+            btnMinusEnergy.Location = new Point(773, 140);
             btnMinusEnergy.Margin = new Padding(0);
             btnMinusEnergy.Name = "btnMinusEnergy";
             btnMinusEnergy.RightToLeft = RightToLeft.No;
@@ -322,7 +322,7 @@
             // 
             btnAddEnergy.Anchor = AnchorStyles.None;
             btnAddEnergy.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnAddEnergy.Location = new Point(856, 141);
+            btnAddEnergy.Location = new Point(856, 140);
             btnAddEnergy.Margin = new Padding(0);
             btnAddEnergy.Name = "btnAddEnergy";
             btnAddEnergy.RightToLeft = RightToLeft.No;
@@ -350,7 +350,7 @@
             // 
             btnMinusResilience.Anchor = AnchorStyles.None;
             btnMinusResilience.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnMinusResilience.Location = new Point(773, 91);
+            btnMinusResilience.Location = new Point(773, 90);
             btnMinusResilience.Margin = new Padding(0);
             btnMinusResilience.Name = "btnMinusResilience";
             btnMinusResilience.RightToLeft = RightToLeft.No;
@@ -364,7 +364,7 @@
             // 
             btnAddResilience.Anchor = AnchorStyles.None;
             btnAddResilience.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnAddResilience.Location = new Point(856, 91);
+            btnAddResilience.Location = new Point(856, 90);
             btnAddResilience.Margin = new Padding(0);
             btnAddResilience.Name = "btnAddResilience";
             btnAddResilience.RightToLeft = RightToLeft.No;
@@ -406,7 +406,7 @@
             // 
             btnAddFocus.Anchor = AnchorStyles.None;
             btnAddFocus.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnAddFocus.Location = new Point(450, 147);
+            btnAddFocus.Location = new Point(450, 143);
             btnAddFocus.Margin = new Padding(0);
             btnAddFocus.Name = "btnAddFocus";
             btnAddFocus.RightToLeft = RightToLeft.No;
@@ -448,7 +448,7 @@
             // 
             btnAddAgility.Anchor = AnchorStyles.None;
             btnAddAgility.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnAddAgility.Location = new Point(450, 195);
+            btnAddAgility.Location = new Point(450, 192);
             btnAddAgility.Margin = new Padding(0);
             btnAddAgility.Name = "btnAddAgility";
             btnAddAgility.RightToLeft = RightToLeft.No;
@@ -490,7 +490,7 @@
             // 
             btnAddPower.Anchor = AnchorStyles.None;
             btnAddPower.Font = new Font("Microsoft Sans Serif", 10.1999989F, FontStyle.Bold);
-            btnAddPower.Location = new Point(450, 93);
+            btnAddPower.Location = new Point(450, 91);
             btnAddPower.Margin = new Padding(0);
             btnAddPower.Name = "btnAddPower";
             btnAddPower.RightToLeft = RightToLeft.No;
@@ -530,7 +530,7 @@
             // label_textScenario
             // 
             label_textScenario.BackColor = Color.Transparent;
-            label_textScenario.Font = new Font("VP Pixel Simplified DEMO", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label_textScenario.Font = new Font("Nirmala UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label_textScenario.ForeColor = Color.Honeydew;
             label_textScenario.Location = new Point(79, 36);
             label_textScenario.Name = "label_textScenario";

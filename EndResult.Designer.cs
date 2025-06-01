@@ -233,7 +233,7 @@
             // label14
             // 
             label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.Font = new Font("Pixellari", 10.2F, FontStyle.Bold);
             label14.ForeColor = Color.Transparent;
             label14.Location = new Point(66, 83);
             label14.Name = "label14";
@@ -313,7 +313,7 @@
             // label15
             // 
             label15.BackColor = Color.Transparent;
-            label15.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.Font = new Font("Pixellari", 10.2F, FontStyle.Bold);
             label15.ForeColor = Color.Transparent;
             label15.Location = new Point(41, 73);
             label15.Name = "label15";
@@ -367,7 +367,7 @@
             // label18
             // 
             label18.BackColor = Color.Transparent;
-            label18.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label18.Font = new Font("Pixellari", 10.2F, FontStyle.Bold);
             label18.ForeColor = Color.Transparent;
             label18.Location = new Point(66, 72);
             label18.Name = "label18";
